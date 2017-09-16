@@ -1,0 +1,13 @@
+estudar método get/post
+página das laboratórios genérica e puxando os dados do model
+controle de versão com github
+tudo para hexagono > media query via js > hexágono responsivo
+ 
+Portal de Horários - Campus Florianopolis (atualmente só para os cursos técnicos)
+incluir as empresas júniors? (ComandoEJ + http://www.ifsc.edu.br/extensao/empresas-juniores)
+imagem aerea feita com drone. Áreas clicáveis. 
+
+SEO: sitemap
+segurança: https e certificação sll
+acessibilidade: alt em todas as imagens
+velocidade: css and js comprenssion
