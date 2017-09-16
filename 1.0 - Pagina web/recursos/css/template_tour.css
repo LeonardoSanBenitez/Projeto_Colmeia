@@ -1,0 +1,128 @@
+/***************************************************************
+****                    BOTÕES CENTRAIS                     ****
+***************************************************************/
+
+#proximo, #anterior, #esquerda, #direita{
+	position: fixed;
+	color:white;
+	font-size: 7em;
+	font-family: 'Glyphicons Halflings';
+	text-shadow: 3px 3px rgba(10, 10, 10, 0.5);
+}
+
+#proximo:hover, #anterior:hover, #esquerda:hover, #direita:hover{
+	color:rgb(200,200,200);
+	font-size: 7.3em;
+}
+
+#proximo{
+	left: 50%;
+	margin-left: -18.5px;
+	bottom: 75px;
+}
+
+#anterior{
+	left: 50%;
+	margin-left: -18.5px;
+	bottom: 10px;
+	display: none;
+}
+
+#esquerda{
+	left: 50%;
+	margin-left: -48.5px;
+	bottom: 45px;
+}
+
+#direita{
+	left: 50%;
+	margin-left: 16px;
+	bottom: 45px;
+}
+
+/***************************************************************
+****                   BOTÕES INFERIORES                    ****
+***************************************************************/
+
+#ver360, #info, #video, #botaoFechar{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+	
+	font-size: 2em;
+    text-align: center;
+	font-family: 'Glyphicons Halflings';
+    color: white; 
+    background-color: black;
+    opacity: 0.7;
+    box-shadow: 2px 2px 2px 2px #000;
+    z-index: 2;
+	display:none;
+}
+
+#ver360:hover, #info:hover, #video:hover, #botaoFechar:hover{
+  color: #8dc641;
+  border-color: #8dc641;
+} 
+
+#botaoFechar{
+	top: 10px;
+	right: 10px;
+    z-index: 6;
+	font-size: 4em;
+	display:initial;
+}
+
+#info{
+	bottom: 5%;
+    left: 20%;
+}
+
+#ver360{
+	bottom: 5%;
+    left: 25%;
+}
+
+#video{
+	bottom: 5%;
+    left: 30%;
+}
+
+/***************************************************************
+****                        LOADING                         ****
+***************************************************************/
+
+.js #loader { 
+	display: block; 
+	position: absolute; 
+	left: 100px; 
+	top: 0;
+}
+#loading {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	font-size:5em;
+	
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+	background-color: rgba(255,255,255,0.5);
+}
+
+/***************************************************************
+****                        POP UP                          ****
+***************************************************************/
+.popUp{
+	position: relative;
+	height: 95%;
+	width: 70%;
+	margin: auto;
+	top: 50%;
+	left:35%;
+}

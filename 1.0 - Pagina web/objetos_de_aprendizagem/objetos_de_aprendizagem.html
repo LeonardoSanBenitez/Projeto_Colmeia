@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<!--- CABEÇALHO --->
+	<head>
+		<!-- Definições Iniciais -->
+		<title>Objetos de Aprendizagem</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible"	content="IE=edge,chrome=1" />
+		<meta name="description"			content="Ferramenta para gestão do conhecimento no Deparamento Acadêmico de Eletrônica do IFSC." />
+		<meta name="keywords"				content="Colmeia, DAELN, IFSC" />
+		<meta name="author"					content="Leonardo Waideman and Leonardo Benitez" />
+		<meta name="viewport"				content="width=device-width, initial scale=1" />
+		<meta name="robots" 				content="index,follow" />
+		<meta http-equiv="content-language"	content="pt-br" />
+		<link rel="icon"					href="../recursos/imagens/favicon.ico"  type="shortcut icon" /> 
+		
+		<!-- CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../recursos/css/bootstrap-theme.min.css"> 
+		<link rel="stylesheet" href="../recursos/css/breadcrumb.css"> 
+		<link rel="stylesheet" href="../recursos/css/template.css">  
+		<link rel="stylesheet" href="../recursos/css/diamonds.css"> 
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  	</head>
+    	
+	<!--- CORPO DA PÁGINA --->
+	<body>   
+		<div class="geral">
+			<!-- Barra de Navegação -->
+			<nav id="navbar"></nav>
+			
+			<!-- Wrap -->
+			<div id="wrap" class="container">
+			
+				<!-- Título da Página -->
+				<div class="container-fluid fundo-titulo">
+					<div class="col-sm-3 col-xs-1">
+						<div id="bc1" class="myBreadcrumb">			
+							<a href="../index1.html" class="active"><i class="fa fa-home fa-2x"></i></a>
+							<a href="../index2.html"><div>Fazer Educacional</div></a>
+						</div>
+						<div id="bc2" class="myBreadcrumb">			
+							<a href="../index2.html" class="active"><i class="fa fa-chevron-left fa-2x"></i></a>
+						</div>
+					</div>
+					<div class="col-sm-9 col-xs-11">
+						<h2 class="letra-titulo">Objetos de Aprendizagem</h2>
+					</div>
+				</div>
+				<p id="descricao" class="bg-success"></p>
+			
+				<!-- Colmeia -->
+				<div class="container diamondswrap ">
+					<div class="row">
+						<div class="col-sm-12">
+							<a href="eletronica_digital.html" 		class="item" data-toggle="tooltip" data-placement="left" title="Eletrônica Digital">		<img src="../recursos/imagens/objetos_de_aprendizagem/eletronica_digital.jpg"></a>
+							<a href="circuitos_eletricos.html"		class="item" data-toggle="tooltip" data-placement="left" title="Circuitos Elétricos">		<img src="../recursos/imagens/objetos_de_aprendizagem/circuitos_eletricos.jpg"></a>
+							<a href="eletronica.html" 				class="item" data-toggle="tooltip" data-placement="left" title="Eletrônica">				<img src="../recursos/imagens/objetos_de_aprendizagem/eletronica.jpg"></a>
+							<a href="sistemas_de_comunicação.html" 	class="item" data-toggle="tooltip" data-placement="left" title="Sistemas de Comunicação">	<img src="../recursos/imagens/objetos_de_aprendizagem/sistemas_de_comunicação.jpg"></a>
+							<a href="http://e-duca.com/" 			class="item" data-toggle="tooltip" data-placement="left" title="Plataforma E-DUCA">			<img src="../recursos/imagens/objetos_de_aprendizagem/educa.jpg"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Rodapé -->
+			<footer id="rodape"></footer>
+		</div>
+		
+		<!-- Java Script -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="../recursos/js/dropdownNavbar.js"></script>
+		<script src="../recursos/js/jquery.diamonds.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$( "#navbar" ).load( "../recursos/html/navbar.html #fazer-educacional" );
+				$( "#rodape" ).load( "../recursos/html/rodape.html #second-level" );
+				$("#descricao").load("../recursos/objetos_de_aprendizagem/descricao.txt");
+				$(".diamondswrap ").diamonds({
+					size: 200,	// Tamanho dos diamantes (pixels)
+					gap: 5		// Espaço entre os diamantes (pixels) 
+				});
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<!--- CABEÇALHO --->
+	<head>
+		<!-- Definições Iniciais -->
+		<title>Circuitos Elétricos</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible"	content="IE=edge,chrome=1" />
+		<meta name="description"			content="Ferramenta para gestão do conhecimento no Deparamento Acadêmico de Eletrônica do IFSC." />
+		<meta name="keywords"				content="Colmeia, DAELN, IFSC" />
+		<meta name="author"					content="Leonardo Waideman and Leonardo Benitez" />
+		<meta name="viewport"				content="width=device-width, initial scale=1" />
+		<meta name="robots" 				content="index,follow" />
+		<meta http-equiv="content-language"	content="pt-br" />
+		<link rel="icon"					href="../recursos/imagens/favicon.ico"  type="shortcut icon" /> 
+		
+		<!-- CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../recursos/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="../recursos/css/breadcrumb.css"> 		
+		<link rel="stylesheet" href="../recursos/css/template.css">  
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  	</head>
+    	
+	<!--- CORPO DA PÁGINA --->
+	<body>   
+		<div class="geral">
+			<!-- Barra de Navegação -->
+			<nav id="navbar"></nav>
+			
+			<!-- Wrap -->
+			<div id="wrap" class="container">
+				<!-- Título da Página -->
+				<div class="container-fluid fundo-titulo">
+					<div class="col-sm-4 col-xs-1">
+						<div id="bc1" class="myBreadcrumb">			
+							<a href="../index1.html" class="active"><i class="fa fa-home fa-2x"></i></a>
+							<a href="../index2.html"><div>...</div></a>
+							<a href="objetos_de_aprendizagem.html"><div>Objetos de Aprendizagem</div></a> 
+						</div>
+						<div id="bc2" class="myBreadcrumb">			
+							<a href="objetos_de_aprendizagem.html" class="active"><i class="fa fa-chevron-left fa-2x"></i></a>
+						</div>
+					</div>
+					<div class="col-sm-8 col-xs-11">
+						<h2 class="letra-titulo">Circuitos Elétricos</h2>
+					</div>
+				</div>
+				<p class="bg-success">Descrição sobre este ramo do conhecimento.</p>
+				
+				<br/><br/>
+				<!-- Tabela com contatos DAELN -->
+				<div class="table-responsive">
+					<table class="table table-bordered table-hover table-green">
+						<thead>
+						  <tr>
+							<th>Nome</th>
+							<th>Descrição</th>
+						  </tr>
+						</thead>
+						<tbody>
+							 <tr>
+								<td> <a href="https://phet.colorado.edu/sims/html/resistance-in-a-wire/latest/resistance-in-a-wire_pt_BR.html" target="_blanck">Resistência de um fio</a></td>
+								<td>Explore a resistência de um fio: mude sua resistividade, comprimento e área.</td>
+							 </tr>
+							 <tr>
+								<td> <a href="https://phet.colorado.edu/sims/html/ohms-law/latest/ohms-law_pt_BR.html" target="_blanck">Lei de Ohm</a></td>
+								<td>Entenda a Lei de Ohm em um circuito resistivo simples.</td>
+							 </tr>
+							 <tr>
+								<td> <a href="http://www.fisicavivencial.pro.br/sites/default/files/ee/211/Executar.html" target="_blanck">Segurança e Eletricidade</a></td>
+								<td>Aspectos básicos de segurança no uso da eletricidade.</td>
+							 </tr>						 
+						</tbody>
+					</table>
+				</div>			
+			</div>
+			
+			<!-- Rodapé -->
+			<footer id="rodape"></footer>
+		</div>
+
+		<!-- Java Script -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="../recursos/js/dropdownNavbar.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$( "#navbar" ).load( "../recursos/html/navbar.html #fazer-educacional" );
+				$( "#rodape" ).load( "../recursos/html/rodape.html #second-level" );
+			});
+		</script>
+	</body>
+</html>

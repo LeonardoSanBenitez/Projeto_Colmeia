@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<!--- CABEÇALHO --->
+	<head>
+		<!-- Definições Iniciais -->
+		<title>Cursos</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible"	content="IE=edge,chrome=1" />
+		<meta name="description"			content="Ferramenta para gestão do conhecimento no Deparamento Acadêmico de Eletrônica do IFSC." />
+		<meta name="keywords"				content="Colmeia, DAELN, IFSC" />
+		<meta name="author"					content="Leonardo Waideman and Leonardo Benitez" />
+		<meta name="viewport"				content="width=device-width, initial scale=1" />
+		<meta name="robots" 				content="index,follow" />
+		<meta http-equiv="content-language"	content="pt-br" />
+		<link rel="icon"					href="../recursos/imagens/favicon.ico"  type="shortcut icon" /> 
+		
+		<!-- CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../recursos/css/bootstrap-theme.min.css"> 
+		<link rel="stylesheet" href="../recursos/css/template.css">  
+		<link rel="stylesheet" href="../recursos/css/diamonds.css"> 
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">	
+	</head>
+
+	<!--- CORPO DA PÁGINA --->
+	<body>   
+		<div class="geral">
+			<!-- Barra de Navegação -->
+			<div id="navbar"></div>
+			
+			<!-- Wrap -->    
+			<div id="wrap" class="container">  
+				<div class="container seta-direita ">
+					<div class="row">
+						<div class="span12"><a class="initialism linkBrancoHover" href=""><p class=" linkBrancoHover centralizartexto textoColmeia"><span class="corLetraPadrao7">C</span>URSOS</p></a> </div>
+					</div>
+					<p class="bg-success">Descubra os cursos oferecidos pelo Departamento Acadêmico de Eletrônica.</p>
+				</div>	
+			
+			   <!-- Colmeia -->
+				<div class="container diamondswrap ">
+					<div class="row">
+						<div class="col-sm-12">
+							<a href="https://curso.ifsc.edu.br/info/graduacao/cstsistemaseletronicos" 					target="_blank" class="item"  data-toggle="tooltip"  data-placement="left" title="Eletrônica Industrial">										<img src="../recursos/imagens/cursos/eletronica_industrial_l.png"></a>
+							<a href="https://curso.ifsc.edu.br/info/graduacao/engenharia-eletronica" 					target="_blank" class="item"  data-toggle="tooltip"  data-placement="left" title="Engenharia Eletrônica">										<img src="../recursos/imagens/cursos/engenharia_eletronica_l.png"></a>
+							<a href="https://curso.ifsc.edu.br/info/tecnicointegrado/tecnicointegradoeletronica" 		target="_blank" class="item"  data-toggle="tooltip"  data-placement="left" title="Técnico integrado em Eletrônica">								<img src="../recursos/imagens/cursos/integrado_em_eletronica_l.png"></a>
+							<a href="https://curso.ifsc.edu.br/info/tecnicosubsequente/tecnicosubsequenteeletronica"	target="_blank" class="item"  data-toggle="tooltip"  data-placement="left" title="Técnico subsequênte em Eletrônica">							<img src="../recursos/imagens/cursos/subsequente_em_eletronica_l.png"></a>
+							<a href="https://curso.ifsc.edu.br/info/especializacao/especializacao-produtos-eletronicos" target="_blank" class="item"  data-toggle="tooltip"  data-placement="left" title="Pós graduação em desenvolvimentos de produtos eletrônicos">	<img src="../recursos/imagens/cursos/desenvolvimento_de_produtos_l.png"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Rodapé-->
+			<footer id="rodape"></footer>
+		</div>
+		
+		<!-- Java Script -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="../recursos/js/jquery.js"></script>
+		<script src="../recursos/js/dropdownNavbar.js"></script>
+		<script src="../recursos/js/jquery.diamonds.js"></script>
+		<script>
+			$( "#navbar" ).load( "../recursos/html/navbar.html #second-level" );
+			$( "#rodape" ).load( "../recursos/html/rodape.html #second-level" );
+			$(".diamondswrap").diamonds({
+				size: 200,	// Tamanho dos diamantes (pixels)
+				gap: 5		// Espaço entre os diamantes (pixels) 
+			});
+		</script>
+	</body>
+</html>

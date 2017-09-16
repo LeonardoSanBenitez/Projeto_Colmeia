@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<!--- CABEÇALHO --->
+	<head>
+		<!-- Definições Iniciais -->
+		<title>Tour Virtual DAELN</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible"	content="IE=edge,chrome=1" />
+		<meta name="description"			content="Conheça nosso departamento através deste tour virtual." />
+		<meta name="keywords"				content="Colmeia, DAELN, IFSC, Tour, Virtual" />
+		<meta name="author"					content="Leonardo Benitez" />
+		<meta name="viewport"				content="width=device-width, initial scale=1" />
+		<meta name="robots" 				content="index,follow" />
+		<meta http-equiv="content-language"	content="pt-br" />
+		<link rel="icon"					href="recursos/imagens/favicon.ico"  type="shortcut icon" /> 
+		
+		<!-- CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="recursos/css/bootstrap-theme.min.css" />  
+		<link rel="stylesheet" href="recursos/css/template.css" />  
+		<link rel="stylesheet" href="recursos/css/template_tour.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+	</head>
+		
+	<!--- CORPO DA PÁGINA --->
+	<body>
+		<div id="loading"><i class="fa fa-cog fa-spin fa-3x fa-fw"></i></div>
+		<!-- Barra de Navegação -->
+		<nav id="navbar"></nav>
+		
+		<!-- Wrap -->
+		<div class="wrap-full-height-width">
+			<img id="imgTour"	class="img-full-height" src="recursos/imagens/hall.jpg" /> <!-- OU https://static.pexels.com/photos/17679/pexels-photo.jpg -->
+			
+			<p id="proximo"		role="button"	class="glyphicon-arrow-up" 		onclick="proximo('imgTour');" 	alt="Proximo" 		title="Proximo"></p>
+			<p id="anterior"	role="button"	class="glyphicon-arrow-down" 	onclick="anterior('imgTour');"	alt="Anterior"		title="Anterior"></p>
+			<p id="esquerda"	role="button"	class="glyphicon-arrow-left" 	onclick="esquerda('imgTour');"	alt="Esquerda"		title="Esquerda"></p>
+			<p id="direita"		role="button"	class="glyphicon-arrow-right"	onclick="direita('imgTour');"	alt="Direita"		title="Direita"></p>
+			<button id="info" 					class="glyphicon-info-sign" 	onclick="info();"				alt="Informações"	title="Informações" ></button>
+			<button id="ver360"					class="glyphicon-repeat" 		onclick="ver360();"				alt="Foto 360"		title="Foto 360" ></button>
+			<button id="video"					class="glyphicon-facetime-video"onclick="video();" 				alt="vídeo"			title="vídeo" ></button>
+	
+			<div class="popUp">
+				<h2 id="nome">Nome do Laboratório</h2>
+				<p id="descricao">Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição </p>
+				<button id="botaoFechar" 		class="glyphicon-remove-sign" 	onclick="fechar();"				alt="Fechar"		title="Fechar"></button>
+			</div>
+		</div>	
+		
+		<!-- JavaScript load--> 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="recursos/js/dropdownNavbar.js"></script>
+		<script src="recursos/js/script_tour_virtual.js"></script>	
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$( "#navbar" ).load( "recursos/html/navbar.html #first-level" );
+				$("#loading").hide("fast", "swing");
+				$('#imgTour').bind('load', function(){ // image ready
+					$("#loading").hide("fast", "swing");
+				});	
+			});
+		</script>	
+	</body>
+</html>

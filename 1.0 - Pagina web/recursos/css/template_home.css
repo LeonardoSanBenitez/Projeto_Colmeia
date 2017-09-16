@@ -1,0 +1,79 @@
+#bodyHome{
+	top: 0;
+	right: 0;
+	bottom: 0;
+    left: 0;
+    z-index: 1;
+    
+    position: absolute;
+    text-align: center;
+   
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	
+	background-image: url("../imagens/fachada_borrada.jpg");
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#fundo{
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	position:absolute;
+	
+	background-image: url("../imagens/fachada.jpg");
+	background-size: auto 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#fundo h1{
+	font-size: 5em;
+	font-weight: bold;
+}
+@media only screen and  (max-width:768px){
+	#fundo h1{font-size:4em;}
+}
+
+#fundo p{
+	font-size: 3.5em;
+	position: absolute;
+	bottom: 15px;
+	text-align: center;
+	left: 0;
+	right:0;
+}
+@media only screen and  (max-width:768px){
+	#fundo p{font-size:2.8em;}
+}
+
+#fundo h1, #fundo p{
+	color:#404040;
+	text-shadow:	2px 	0px		6px #fff,
+					-2px	0px 	6px #fff,
+					0px 	2px		6px #fff,
+					0px		-2px	6px #fff;
+}
+/*.center{
+	display: block;
+    margin: auto;
+	height:65%;
+}*/
+
+#logoLPTE{
+	width:110px;
+	position: absolute; 
+	bottom: 0px; right: 0px;
+}
+@media only screen and  (max-width:768px) {
+	#logoLPTE{display:none;}
+}
+/*#logoIFSC{
+	width:12%;
+	position: absolute; 
+	bottom: 10px; left: 10px;
+}*/

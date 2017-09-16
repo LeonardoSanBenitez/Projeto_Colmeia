@@ -1,0 +1,54 @@
+/***************************************************************
+****                  GRUPOS DE PESQUISA                    ****
+***************************************************************/
+
+.grupos{
+	text-align: left;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+@media screen and (max-width: 768px){
+	.grupos{text-align: center;}
+}
+
+.grupos a{
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+#cnpq-logo{
+	margin-right:30px;
+	margin-top:30px;
+}
+#dgpb-logo{
+	margin-left:30px;
+}
+@media screen and (max-width: 480px){
+	#cnpq-logo{display: none; }
+	#dgpb-logo{display: none;}
+}
+@media screen and (max-width: 768px){
+	#arte-colmeia{display:none;}
+}
+
+
+/***  BOTÕES ***/
+.btn-lg{
+	min-width: 267px;
+	white-space: normal;
+}
+@media screen and (max-width: 768px) and (min-width: 481px){
+	.btn-lg{	
+		
+		font-size: 17px;
+		
+		width: 400px;
+	}
+}
+@media screen and (max-width: 480px){
+	.btn-lg{
+		white-space: normal;
+		font-size: 15px;
+		min-width: 0px;
+	}
+}

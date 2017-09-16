@@ -1,0 +1,3 @@
+Letra: Comic sans, tamanho 23 ,bold, cor V10, centralizado.
+Fundo: contraste -14
+Formato: jpg 185x185

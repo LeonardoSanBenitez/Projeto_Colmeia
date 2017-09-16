@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<!--- CABEÇALHO --->
+	<head>
+		<!-- Definições Iniciais -->
+		<title>Lab. Processamento de Sinais Digitais</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible"	content="IE=edge,chrome=1" />
+		<meta name="description"			content="Ferramenta para gestão do conhecimento no Deparamento Acadêmico de Eletrônica do IFSC." />
+		<meta name="keywords"				content="Colmeia, DAELN, IFSC" />
+		<meta name="author"					content="Leonardo Waideman and Leonardo Benitez" />
+		<meta name="viewport"				content="width=device-width, initial scale=1" />
+		<meta name="robots" 				content="index,follow" />
+		<meta http-equiv="content-language"	content="pt-br" />
+		<link rel="icon"					href="../recursos/imagens/favicon.ico"  type="shortcut icon" /> 
+		
+		<!-- CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../recursos/css/bootstrap-theme.min.css"> 
+		<link rel="stylesheet" href="../recursos/css/template.css">  
+		<link rel="stylesheet" href="../recursos/css/diamonds.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  	</head>
+    	
+	<!--- CORPO DA PÁGINA --->
+	<body>
+		<div class="geral">	
+			<!-- Barra de Navegação -->
+			<nav id="navbar"></nav>
+			
+			<!-- Wrap -->
+			<div id="wrap" class="container">
+				<!-- Título da Página -->
+				<div class="container seta-direita ">
+					<div class="row">
+						<div class="span12"><a class=" initialism linkBrancoHover " href="laboratorios.html"><p class="  centralizartexto textoColmeia  "><span class="corLetraPadrao7 ">L</span>ABORATÓRIOS</a> <a class="initialism linkBrancoHover" href="">/ <span class="corLetraPadrao7 ">P</span>ROCESSAMENTO DE SINAIS DIGITAIS</p></a> </div>
+					</div>
+					<p class="bg-success">Descrição.</p>
+				</div>
+				
+				<!-- Visualização 360 -->
+				<!-- <div class="col-sm-12 ">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m0!3m2!1spt-BR!2sus!4v1492867045782!6m8!1m7!1sF%3A-X5Vt_bJ1p94%2FWPjDnWRAYaI%2FAAAAAAAAGW0%2F2ThCD3BX6Dc4Xmice98dgjJixn8T-rNrACLIB!2m2!1d-27.59392137653606!2d-48.5426140576601!3f13.267886250313552!4f-1.057456779731055!5f0.4715529953253576" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div> -->
+				
+				<!-- Tabelas de Conteúdo-->
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="table-responsive">
+							<!-- Tabela de projetos -->
+							<table class="table">
+								<thead>
+									<tr><th class="headerTabelas">Alguns dos projetos desenvolvidos aqui </th></tr>
+								</thead>
+								<tbody>
+									<tr class="success">
+										<td><a class="linksCursosTabela" href="">Projeto 1</a></td>
+									</tr>
+									<tr class="success">
+										<td><a class="linksCursosTabela" href="">Projeto 2</a></td>
+									</tr>
+								</tbody>
+							</table>
+							<!-- Tabela de Instrumentos -->
+							<table class="table">
+								<thead>
+									<tr><th class="headerTabelas">Instrumentos e ferramentas disponíveis </th></tr>
+								</thead>
+								<tbody>
+									<tr class="success">
+										<td><a class="linksCursosTabela" href="../instrumentos/multimetro.html">Multímetro</a></td>
+									</tr>
+									<tr class="success">
+										<td><a class="linksCursosTabela" href="../instrumentos/ferro_de_solda.html">Ferro de solda</a></td>
+									</tr>
+								</tbody>
+							</table>
+							<!-- Tabela de cursos -->
+							<table class="table">
+								<thead>
+									<tr><th class="headerTabelas">Cursos que utilizam este laboratório</th></tr>
+								</thead>
+								<tbody>
+									<tr class="success">
+									  <td><a class="linksCursosTabela" href="../cursos/eletronica_industrial.html">Eletrônica Industrial</a></td>
+									</tr>
+									<tr class="success">
+									  <td><a class="linksCursosTabela" href="../cursos/engenharia_eletronica.html">Engenharia Eletrônica</a></td>
+									</tr>
+									<tr class="success">
+									  <td><a class="linksCursosTabela" href="../cursos/integrado_em_eletronica.html">Téc. Integrado em Eletrônica</a></td>
+									</tr>
+									<tr class="success">
+									  <td><a class="linksCursosTabela" href="../cursos/subsequente_em_eletronica.html">Téc. Subsequente em Eletrônica</a></td>
+									</tr>
+									<tr class="success">
+									  <td><a class="linksCursosTabela" href="../cursos/desenvolvimento_de_produtos.html">Desenvolvimento de Produtos Eletrônicos</a></td>
+									</tr>
+								</tbody>
+							</table>
+						</div> 
+					</div>
+				</div>
+			</div>   
+
+			<!-- Rodapé -->
+			<footer id="rodape"></footer>
+		</div>
+		
+		<!-- Java Script -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="../recursos/js/dropdownNavbar.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$( "#navbar" ).load( "../recursos/html/navbar.html #second-level" );
+				$( "#rodape" ).load( "../recursos/html/rodape.html #second-level" );
+			});
+		</script>		
+	</body>
+</html>

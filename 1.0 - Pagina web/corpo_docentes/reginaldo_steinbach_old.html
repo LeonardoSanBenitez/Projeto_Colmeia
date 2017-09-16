@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<!--- CABEÇALHO --->
+	<head>
+		<!-- Definições Iniciais -->
+		<title>Reginaldo Steinbach</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible"	content="IE=edge,chrome=1" />
+		<meta name="description"			content="Docente do Departameto Acadêmico de Eletrônica do IFSC." />
+		<meta name="keywords"				content="Colmeia, IFSC, Reginaldo, Steinbach" />
+		<meta name="author"					content="Leonardo Benitez" />
+		<meta name="viewport"				content="width=device-width, initial scale=1" />
+		<meta name="robots" 				content="index,follow" />
+		<meta http-equiv="content-language"	content="pt-br" />
+		<link rel="icon"					href="../recursos/imagens/favicon.ico"  type="shortcut icon" /> 
+		
+		<!-- CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../recursos/css/bootstrap-theme.min.css" />  
+		<link rel="stylesheet" href="../recursos/css/template.css">  
+		<link rel="stylesheet" href="../recursos/css/smart_cycle.css">	
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">		
+  	</head>
+    	
+	<!--- CORPO DA PÁGINA --->
+	<body>
+		<div class="geral">	
+			<!-- Barra de Navegação -->
+			<nav id="navbar"></nav>
+			
+			<!-- Wrap -->
+			<div id="wrap" class="container">
+				<!-- Título da Página -->
+				<div class="container seta-direita ">
+					<div class="row">
+						<div class="span12"><a class=" initialism linkBrancoHover " href="docentes.html"><p class="  centralizartexto textoColmeia  "><span class="corLetraPadrao7 ">D</span>ocentes</a> <a class="initialism linkBrancoHover" href="">/ <span class="corLetraPadrao7 ">R</span>EGINALDO STAINBACH</p></a> </div>
+					</div>
+				</div>
+				
+				<div class="col_lg_12">
+					<div class="ciclo1">
+						<img id="sc_especialidade"				src="../recursos/imagens/corpo_docentes/especialidade.jpg"			class="sc_object"></img>
+						<img id="sc_curriculo_lattes"			src="../recursos/imagens/corpo_docentes/curriculo_lattes.jpg"			class="sc_object"></img>
+						<img id="sc_grupos_de_pesquisa"			src="../recursos/imagens/corpo_docentes/grupos_de_pesquisa.jpg"		class="sc_object"></img>
+						<img id="sc_disciplinas_ministradas"	src="../recursos/imagens/corpo_docentes/disciplinas_ministradas.jpg"	class="sc_object"></img>
+						<img id="sc_hobby" 						src="../recursos/imagens/corpo_docentes/hobby.jpg" 					class="sc_object"></img>
+						<img 									src="../recursos/imagens/corpo_docentes/reginaldo_steinbach.jpg"		class="sc_center"></img>
+					</div>
+					<div id="especialidade" class="popUp">
+						<h2>Especialidade do docente</h2>
+						<p>Possui Mestrado em Mecatrônica pelo Instituto Federal de Santa Catarina(2012) e graduação em Sistemas Eletrônicos pelo Instituto Federal de Santa Catarina (2007). Possui experiência em Programação de Sistemas Computacionais e Embarcados, atuando principalmente nos seguintes temas: Tele Supervisão, GPRS e Serviços Web.</p>
+						<button id="botaoFechar" 		class="glyphicon-remove-sign" 	onclick="fechar();"				alt="Fechar"		title="Fechar"></button>
+					</div>
+				</div>
+
+			</div>
+			
+			<!-- Rodapé -->
+			<footer id="rodape"></footer>
+		</div>
+		
+		<!-- JavaScript --> 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="../recursos/js/dropdownNavbar.js"></script>
+		<script src="../recursos/js/smart_cycle.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$( "#navbar" ).load( "../recursos/html/navbar.html #second-level" );
+				$( "#rodape" ).load( "../recursos/html/rodape.html #second-level" );
+
+				var radio_arrows =0;
+				var container_width = 420, container_height=420;
+				var radio = 200;
+				var c_container_width = 420, c_container_height=420;
+				$(".ciclo1").smartCycle({
+					container_width: '420px',
+					container_height: '420px',
+					radio: radio,
+					radio_arrows: radio_arrows,
+					arrows_colors:['#40A4C0'],
+					colors:['#40A4C0','#40A4C0']
+				});
+			});			
+		</script>
+	</body>
+</html>

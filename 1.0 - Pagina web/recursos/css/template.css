@@ -1,0 +1,584 @@
+/***************************************************************
+                      DENIFIÇÃO DE PADRÕES                    
+	Cores
+		Cor verde: #8dc641
+		Fundo cinza: #2a2a2b
+
+	Breakpoint de responsividade
+		Breakpoint-alfa: 480px;
+		Breakpoint-beta: 678px;
+		Breakpoint-charlie: 998px;
+		Breakpoint-charlie: 1200px;
+***************************************************************/
+
+
+/***************************************************************
+****              FUNDOS E DIVISÕES GERAIS                  ****
+***************************************************************/
+* html .geral {
+	height: 100%; /* hack para IE6 que trata height como min-height */
+	}
+
+html,body {
+    top: 0;
+	bottom: 0;
+    right: 0;
+	left: 0;
+    margin: 0;
+    padding: 0;
+	z-index: 1;
+    position: absolute;
+    text-align: center;
+	font-size: 62.5%;
+	height: 100%;
+}
+.geral{
+	min-height: 100%;
+	min-width: 100%;
+	position: relative;
+	z-index: -1;
+}
+#wrap {
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 10px;
+	padding-bottom: 161px; /* 131 + 30px */
+	min-height: 100% -300px;
+}
+@media only screen and  (max-width:768px) {
+	#wrap {padding-bottom: 144px; /* 114 + 30px */}
+}
+@media only screen and  (max-width:420px) {
+	#wrap {padding-bottom: 161px; /* 131 + 30px (por que o texto quebra em duas linhas) */}
+}
+
+@media only screen and  (max-width:245px) {
+	#wrap {padding-bottom: 215px; /* 185 + 30px (por que o texto quebra muito */}
+}
+
+.wrap-full-height-width {
+	position:absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	margin: auto;
+	z-index: -1;
+	
+	height: 100% -0px;
+	margin-top: 52px;
+	max-width: 100%;
+	max-width:100%;
+	width: 100%;
+	overflow: hidden;
+	
+	border-style: hidden solid solid solid;
+	border-color: white;
+	border-width: 1px;
+}
+.img-full-height{
+	position:absolute;
+	top: 0px; left: 0px; bottom: 0px; right: 0px;
+	margin: auto;
+	
+	height: 100%;
+	min-height: 100%;
+	
+}
+.img-full-height-width{
+/*	position:absolute;
+	top: 0px; left: 0px; bottom: 0px; right: 0px;
+	margin: auto;
+	
+	width: 100%;
+	min-width: 100%;
+	*/
+	
+	height: 100%;
+	width: 100%;
+	
+	text-align: center;
+	position:absolute;
+	
+	background-image: url("../imagens/fachada.jpg");
+	background-size: auto 100%;
+	background-position: center;
+	background-repeat: no-repeat;	
+}
+
+.videos{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+/*** POP UP ***/
+.popUp{
+	display:none;
+	position: fixed;
+	height: 90%;
+	width: 60%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+	overflow: auto;
+	z-index: 3;
+	
+	background-color: rgba(15,15,15,0.97);
+	border-style: solid;
+	border-radius: 25px;
+	border-color: gray;
+	color: white;
+}
+.popUp h2{
+	text-decoration: underline;
+	font-size: 5em;
+}
+.popUp p{
+	font-size: 3em;
+	text-align: justify;
+	margin-left:20px;
+	margin-right:20px;
+}
+#botaoFechar{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+	top: 10px;
+	right: 10px;
+    z-index: 6;
+	font-size: 4em;
+	font-family: 'Glyphicons Halflings';
+	
+    border-radius: 40px;
+    color: white; 
+    background-color: black;
+    opacity: 0.7;
+    box-shadow: 2px 2px 2px 2px #000;
+}
+#botaoFechar:hover{
+  color: #8dc641;
+  border-color: #8dc641;
+} 
+
+
+/***************************************************************
+****                     ALINHAMENTOS                       ****
+***************************************************************/
+
+.direita{
+	float: right;
+}
+.esquerda{
+	float: left;
+}
+.esquerda_absolute{
+	left: 90px;
+	position:absolute;
+	z-index:-1;
+}
+.centralizartexto{
+	text-align: center;
+}
+.alinhaEsquerda{
+  text-align: justify;
+   font-size: 2em;
+}
+
+/***************************************************************
+****                       RODAPÉ                           ****
+***************************************************************/
+
+.fundo-rodape{
+	position: absolute; 
+	bottom: 0;				/* fixa no final da div geral */
+
+	background-color: #2a2a2b;
+	box-shadow: 0px -1px 10px #2a2a2b;
+	overflow: hidden;
+
+	min-width: 100%;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	z-index: 1;
+}
+
+.rodape{
+  color: white;
+  margin-top: 20px;
+}
+.rodape p{
+	font-size:2em;
+	margin:0px;
+}
+.rodape a{
+	font-size: 5em;
+	margin: 3px 3px 3px 3px;
+	color: white;
+	text-decoration:none;
+}
+.rodape a:hover{
+	color:#8dc641;
+}
+
+.imagens-rodape{
+  padding: 0px;
+
+}
+.imagens-rodape:hover{
+	padding-left:3px;	
+}
+@media only screen and  (max-width: 768px) {
+   .imagens-rodape{
+    display: none;
+  }
+}
+
+/***************************************************************
+****                        NAVBAR                          ****
+***************************************************************/
+
+.navbar{ 
+  border-bottom-style: solid;
+  border-bottom-color: white;
+  box-shadow: 2px 2px 2px 2px #999;
+  background-color: #000;
+  border-radius: 0px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar-header h1{
+	margin: 0px;
+}
+.navbar-inverse .navbar-brand {
+    color: white;
+	font-size: 100%;
+}
+.navbar-inverse .navbar-brand:hover {
+    color:  #8dc641;
+}
+.navbar-inverse .navbar-brand::first-letter{
+    color:  #8dc641;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+}
+.navbar-inverse .navbar-nav > li > a:hover {
+    color:  #8dc641;
+}
+.navbar-brand{
+  padding-right: 10px;
+}
+
+.navbar-right{
+	font-size:1.1em;
+}
+/** Dropdown Menu **/
+.dropdown-menu > li > a{
+  font-size: 0.5em;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.dropdown-menu{
+  border-radius: 15px 0px 30px 5px;
+}
+
+/***************************************************************
+****                   TÍTULO DA PÁGINA                     ****
+***************************************************************/
+.fundo-titulo{
+	position: relative;
+	background-color: #2a2a2b;
+	margin-top: 25px;
+	margin-bottom: 10px;
+	height: 61px;
+	
+	border-top: solid 2px rgb(217, 237, 247);			
+	border-radius: 10px 0px 30px 10px;
+	box-shadow: 2px 2px 2px 2px #999;
+}
+.fundo-titulo .letra-titulo{
+	position: relative;
+	padding: 12px 50px 12px 12px;
+	margin:0px;
+	font-size: 5.5em;
+	
+	text-align: right; 
+	vertical-align:center;
+	color: white;
+}
+.fundo-titulo .letra-titulo::first-letter{
+	color:#8dc641;
+}
+.descricao-pagina{
+	margin-bottom: 10px;
+	margin-top: 10px;
+	
+	background-color: #8dc641;
+	box-shadow: 5px 5px 5px 5px #8dc641;
+}
+
+.seta-direita:before {
+  position: relative;
+  top: 32px;
+  left: -17px;
+
+  border-top: 0px solid transparent;
+  border-bottom: 35px solid transparent;
+  border-left: 30px solid #1d1e1e;
+}
+.seta-direita2:before { 
+  position: absolute;
+  top: -7px;
+  right: -10px;
+
+  border-right: 40px solid #1d1e1e ;
+  border-top: 0px solid transparent;
+  border-bottom: 45px solid transparent;
+  border-left: 35px solid transparent;
+}
+a>img:hover{
+  opacity: 0.7;
+}
+
+/***************************************************************
+****                     TABLE GREEN                        ****
+***************************************************************/
+
+.table-green{
+	font-size:2.5em;
+}
+.table-green thead th{
+	text-align: center;
+	font-size: 1.2em;
+	background-color: #8bc19c;
+}
+.table-green tbody tr{
+	background-color: #ccffcc;
+	/* padding-right: 20px;*/
+}
+.table-green tbody tr td a{
+	color: black;
+	text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.table-hover > tbody > tr:hover{
+	background-color: #b5e3c4;
+}
+
+/***************************************************************
+****                    TEMPLATE ANTIGO                     ****
+***************************************************************/
+
+.diamondswrap{
+	padding: 0%;
+	overflow: auto;
+	overflow-y: hidden;
+	max-width: 600px;
+	padding-top: 10px;
+	padding-bottom: 120px;
+}
+
+/** Tags Básicas **/
+a {
+  color: white;
+}
+a>h3{
+  color: black;
+}
+a:hover
+{ 
+ text-decoration:none; 
+} 
+a>img:hover{
+  opacity: 0.85;
+  padding-left: 1px;
+}
+h1 {
+  font-size: 3.4em;
+}
+h2{
+  font-size: 2.8em;
+  padding-top: 20px;
+}
+h3{
+  font-size: 2.6em;
+}
+h4{
+  font-family: helvetica;
+  color: black;
+  font-size: 2em;
+  z-index: 998;
+  text-decoration: underline;
+}
+h4:hover{
+  text-decoration: none;
+  color:#999966;
+}
+
+p{
+  font-size: 2.2em;
+}
+ul li{
+  font-size: 1.8em;
+}
+div<div<ul<li<a{
+	border-bottom: transparent;
+}
+
+/** Cor dos Links **/
+.linkAzul{
+  color: blue;
+}
+.linkBrancoHover:hover{
+  color: white;
+}
+.linkpreto{
+  color: black;
+}
+.linkpreto:hover{
+  color: black;
+}
+
+/** Letras Coloridas **/
+.corLetraPadrao1{
+  color: rgb(88, 188, 102);
+}
+.corLetraPadrao2{
+ color:#ed1c22;
+}
+.corLetraPadrao3{
+color:rgb(216, 24, 107);
+}
+.corLetraPadrao4{
+color:rgb(91, 130, 195);
+}
+.corLetraPadrao5{
+color:rgb(255, 255, 255);
+}
+.corLetraPadrao6{
+color:rgb(202, 216, 43);
+}
+.corLetraPadrao1:hover{
+  color: white;
+  cursor: pointer;
+}
+.corLetraPadrao2:hover{
+  color: white;
+  cursor: pointer;
+}
+.corLetraPadrao3:hover{
+  color: white;
+  cursor: pointer;
+}
+.corLetraPadrao4:hover{
+  color: white;
+  cursor: pointer;
+}
+.corLetraPadrao5:hover{
+  color: white;
+  cursor: pointer;
+}
+.corLetraPadrao6:hover{
+  color: white;
+  cursor: pointer;
+}
+   
+.corLetraPadrao7{
+color:#8dc641;
+}
+.corLetraPadrao7:hover{
+  cursor: pointer;
+}
+.corLetraPadrao8{
+color:rgb(251, 188, 5);
+}
+.corLetraPadrao8:hover{
+  color: white;
+  cursor: pointer;
+}
+
+/** Resto **/
+.pdbot{
+  padding-bottom: 40px;
+}
+.buttonBranco{
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: white;
+}
+.semPaddingLeft{
+  padding-left: 0px
+}
+.semPaddingRight{
+  padding-right: 0%;
+}
+.paddingCimaDoPlayer{
+  padding-bottom: 100000%;
+}
+.paddingRight{
+  padding-right: 0.1%;
+} 
+.paddingLeft{
+  padding-left: 0.1%;
+} 
+@media (max-width: 767px) {
+	.paddingRight {
+		padding-right: 0%;
+	}
+}
+.linhaBaixo{
+  border-bottom-style: groove;
+}
+.paddingTop10px{
+  padding-top: 10px;
+}
+.bordaQuadrada{
+  padding-top: 3px;
+  border-radius: 0px;
+
+}
+.linkBaixo{
+  padding-top: 5px;
+  margin-top: 0px;
+  padding-bottom: 5px;
+  margin-bottom: 0px;
+}
+.grande{
+  font-size: 5em;
+}
+@media only screen and  (max-width:767px) {
+  .grande{
+    padding-top: 15%; 
+  }
+}
+.semPaddingTop{
+  padding-top: 0px;
+}
+.paddingTop30{
+  padding-top: 30%;
+}
+.textoColmeia{
+  font-size: 6em;
+  box-shadow: 2px 2px 2px 2px #999;
+  background-color: #2a2a2b;
+  text-align: right;
+  padding-right: 5%;  
+  color: white;
+  border-radius: 15px 0px 30px 5px;
+  border-top: solid 2px rgb(217, 237, 247);
+  text-transform: none;
+}
+.textoLaboratorios{
+  color: #52cadc;
+}
+.descricaoLabs{
+  text-align: justify;
+}
+.linksCursosTabela{
+  font-size: 2em;
+  color: black;
+}
+.headerTabelas{
+  font-size: 2.2em;
+}

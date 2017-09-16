@@ -1,0 +1,1 @@
+﻿Dispõe de bancadas preparadas para o desenvolvimento, montagem e teste de protótipos. </br>Além disso, este laboratório possui uma sala de corrosão, um almoxarifado de componentes eletrônicos e computadores. 

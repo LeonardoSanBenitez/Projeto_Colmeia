@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<!--- CABEÇALHO --->
+	<head>
+		<!-- Definições Iniciais -->
+		<title>Instrumentos e Ferramentas</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible"	content="IE=edge,chrome=1" />
+		<meta name="description"			content="Ferramenta para gestão do conhecimento no Deparamento Acadêmico de Eletrônica do IFSC." />
+		<meta name="keywords"				content="Colmeia, DAELN, IFSC" />
+		<meta name="author"					content="Leonardo Waideman and Leonardo Benitez" />
+		<meta name="viewport"				content="width=device-width, initial scale=1" />
+		<meta name="robots" 				content="index,follow" />
+		<meta http-equiv="content-language"	content="pt-br" />
+		<link rel="icon"					href="../recursos/imagens/favicon.ico"  type="shortcut icon" /> 
+		
+		<!-- CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../recursos/css/bootstrap-theme.min.css"> 
+		<link rel="stylesheet" href="../recursos/css/template.css">  
+		<link rel="stylesheet" href="../recursos/css/diamonds.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">		
+  	</head>
+    	
+	<!--- CORPO DA PÁGINA --->
+	<body>
+		<div class="geral">	
+			<!-- Barra de Navegação -->
+			<div id="navbar"></div>
+			
+			<!-- Wrap -->
+			<div id="wrap" class="container">
+				<!-- Título da Página -->
+				<div class="container seta-direita ">
+					<div class="row">
+						<div class="span12"><a class="initialism linkBrancoHover" href=""><p class=" linkBrancoHover centralizartexto textoColmeia"><span class="corLetraPadrao7">I</span>nstrumentos</p></a> </div>
+					</div>
+					<p class="bg-success">Descubra quais os principais instrumentos e ferramentas utilizadas na eletrônica, bem como seu funcionamento, aplicações e em quais de nossos laboratórios elas estão presentes. </p>
+				</div>
+			
+				<!-- Colmeia -->
+				<div class="container diamondswrap ">
+					<div class="row">
+						<div class="col-sm-12">
+							<a href="multimetro.html" 				class="item" data-toggle="tooltip" data-placement="left" title="Multímetro">				<img src="../recursos/imagens/instrumentos/multimetro.jpg"></a>
+							<a href="osciloscopio.html" 			class="item" data-toggle="tooltip" data-placement="left" title="Osciloscópio">				<img src="../recursos/imagens/instrumentos/osciloscopio.jpg"></a>
+							<a href="gerador_de_funcao.html" 		class="item" data-toggle="tooltip" data-placement="left" title="Gerador de função">			<img src="../recursos/imagens/instrumentos/gerador_de_funcao.jpg"></a>
+							<a href="fonte_de_tensao.html" 			class="item" data-toggle="tooltip" data-placement="left" title="Fonte de tensão">			<img src="../recursos/imagens/instrumentos/fonte_de_tensao.jpe"></a>
+							<a href="transformador_variavel.html" 	class="item" data-toggle="tooltip" data-placement="left" title="Transformador variável">	<img src="../recursos/imagens/instrumentos/transformador_variavel.jpg"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Rodapé-->
+			<footer id="rodape"></footer>
+		</div>
+		
+		<!-- Java Script -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="../recursos/js/dropdownNavbar.js"></script>
+		<script src="../recursos/js/jquery.diamonds.js"></script>
+		<script>
+			$(document).ready(function(){
+				$( "#navbar" ).load( "../recursos/html/navbar.html #fazer-educacional" );
+				$( "#rodape" ).load( "../recursos/html/rodape.html #second-level" );
+				$(".diamondswrap ").diamonds({
+					size: 200,	// Tamanho dos diamantes (pixels)
+					gap: 5		// Espaço entre os diamantes (pixels) 
+				});
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<!--- CABEÇALHO --->
+	<head>
+		<!-- Definições Iniciais -->
+		<title>Sistemas de Comunicação</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible"	content="IE=edge,chrome=1" />
+		<meta name="description"			content="Ferramenta para gestão do conhecimento no Deparamento Acadêmico de Eletrônica do IFSC." />
+		<meta name="keywords"				content="Colmeia, DAELN, IFSC" />
+		<meta name="author"					content="Leonardo Waideman and Leonardo Benitez" />
+		<meta name="viewport"				content="width=device-width, initial scale=1" />
+		<meta name="robots" 				content="index,follow" />
+		<meta http-equiv="content-language"	content="pt-br" />
+		<link rel="icon"					href="../recursos/imagens/favicon.ico"  type="shortcut icon" /> 
+		
+		<!-- CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../recursos/css/bootstrap-theme.css">
+		<link rel="stylesheet" href="../recursos/css/breadcrumb.css"> 		
+		<link rel="stylesheet" href="../recursos/css/template.css">  
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  	</head>
+    	
+	<!--- CORPO DA PÁGINA --->
+	<body> 
+		<div class="geral">
+			<!-- Barra de Navegação -->
+			<nav id="navbar"></nav>
+			
+			<!-- Wrap -->
+			<div id="wrap" class="container">
+				<!-- Título da Página -->
+				<div class="container-fluid fundo-titulo">
+					<div class="col-sm-3 col-xs-1">
+						<div id="bc1" class="myBreadcrumb">			
+							<a href="objetos_de_aprendizagem.html" class="active"><i class="fa fa-chevron-left fa-2x"></i>   Voltar</a>
+						</div>
+						<div id="bc2" class="myBreadcrumb">			
+							<a href="objetos_de_aprendizagem.html" class="active"><i class="fa fa-chevron-left fa-2x"></i></a>
+						</div>
+					</div>
+					<div class="col-sm-9 col-xs-11">
+						<h2 class="letra-titulo">Sistemas de Comunicação</h2>
+					</div>
+				</div>
+				<p class="bg-success">Descrição sobre este ramo do conhecimento.</p>
+				
+				<br/><br/>
+				<!-- Tabela com contatos DAELN -->
+				<div class="table-responsive">
+					<table class="table table-bordered table-hover table-green">
+						<thead>
+						  <tr>
+							<th>Nome</th>
+							<th>Descrição</th>
+						  </tr>
+						</thead>
+						<tbody>
+							 <tr>
+								<td> <a href="../recursos/objetos_de_aprendizagem/sistemas_de_comunicação/fibra_otica/story_html5.html" target="_blanck">Fibra Ótica</a></td>
+								<td>Fabricação e operação dos cabos de fibra ótica.</td>
+							 </tr>					 
+						</tbody>
+					</table>
+				</div>			
+			</div>
+			
+			<!-- Rodapé -->
+			<footer id="rodape"></footer>
+		</div>
+		
+		<!-- Java Script -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="../recursos/js/dropdownNavbar.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$( "#navbar" ).load( "../recursos/html/navbar.html #fazer-educacional" );
+				$( "#rodape" ).load( "../recursos/html/rodape.html #second-level" );
+			});
+		</script>
+	</body>
+</html>

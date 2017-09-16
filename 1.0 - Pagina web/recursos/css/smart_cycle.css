@@ -1,0 +1,68 @@
+@keyframes fadein {
+    0% {
+        opacity:0;
+    }
+    40%{
+    	opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    0% {
+        opacity:0;
+    }
+    40%{
+    	opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.ciclo1{
+	position: absolute;
+	display:block;
+	text-align: center;
+		
+	left: 0; 
+	right: 0; 
+	margin-left: auto; 
+	margin-right: auto; 
+	margin-top: 90px;
+	
+	color: #fff;
+	font-family: sans-serif;
+	font-weight: 400;
+}
+
+.col_lg_12{
+	height:550px;
+}
+
+.sc_object{
+	transition:left 1s ease-out,top 1s ease-out;
+	text-decoration: none;
+	color:#fff;
+}
+.sc_object:hover{
+	cursor:pointer;
+}
+/*if width<710px{hide ciclo1;show tabela}*/

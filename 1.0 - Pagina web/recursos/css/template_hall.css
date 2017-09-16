@@ -1,0 +1,116 @@
+#wrapHall {
+	background: url("../imagens/ifsc_aerea.png");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#triagem{
+	/* centralizar
+	margin: 0 auto;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%); */
+	display: block;
+}
+#bifsc{
+
+}
+#bdaeln{
+}
+
+/***  CONTEUDO ***/
+.conteudo{
+	display: none;
+	position: absolute;
+	bottom: 20px;
+	margin-right: 150px;
+	margin-left: 5%;
+}
+@media screen and (max-width: 768px){
+	.conteudo{
+		margin-right:100px;
+	}
+}
+@media screen and (max-width: 480px){
+	.conteudo{
+		margin-right: 5%;
+	}
+}
+
+.conteudo li {
+    float: left;
+	margin-top: 10px;
+}
+
+/***  LOGO LPTE ***/
+#logoLPTE{
+	width:110px;
+	position: absolute; 
+	bottom: 0px; right: 0px;
+}
+@media screen and (max-width: 768px){
+	#logoLPTE{
+		width:80px;
+	}
+}
+@media screen and (max-width: 480px){
+	#logoLPTE{
+		display:none;
+	}
+}
+/***  VOLTAR ***/
+#voltar{
+	display: none;
+	position: absolute; 
+	top: 0px; right: 0px;
+	height: 85px;
+}
+@media screen and (max-width: 768px){
+	#voltar{
+		height: 85px;
+	}
+}
+
+@media screen and (max-width: 480px){
+	#voltar{
+		height: 65px;
+	}
+}
+
+
+/***  BOTÕES ***/
+.btn-lg{
+	min-width: 267px;
+}
+@media screen and (max-width: 768px) and (min-width: 481px){
+	.btn-lg{
+		font-size: 16px;
+		min-width: 241px;
+	}
+	#ifsc .btn-lg{
+		min-width: 231px;
+	}
+	#triagem .btn-lg{
+		font-size: 18px;
+	}
+}
+@media screen and (max-width: 480px){
+	.btn-lg{
+		white-space: normal;
+		font-size: 12px;
+		padding: 2px 3px;
+		
+		width: 97px;
+		min-height: 34px;
+		min-width: 0px;
+	}
+	#triagem .btn-lg{
+		font-size: 15px;
+		padding: 5px 8px;
+		
+		width: 110px;
+		min-height: 69px;
+	}
+}
