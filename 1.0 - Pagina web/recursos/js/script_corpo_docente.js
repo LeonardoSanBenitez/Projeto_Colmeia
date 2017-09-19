@@ -3,16 +3,13 @@
 	var endereco = "../recursos/corpo_docente/";
 	var area_de_conhecimento;
 	var hobby;
-	
+
 	/***************************************************************
 	****                     FUNÇÃO PRINCIPAL                   ****
 	***************************************************************/
-	
+
 	seleciona_professor = function (professor){
-		$("#foto").attr("src", endereco + professor + "/foto.jpg");
-		$.get(endereco + professor + "/curriculo_lattes.txt", function(data){$("#curriculo_lattes").attr("href", data);});
-		$.get(endereco + professor + "/area_de_conhecimento.txt", function(data){area_de_conhecimento=data});
-		$.get(endereco + professor + "/hobby.txt", function(data){hobby=data});
+		// Nome
 		$("#nome").load(endereco + professor + "/nome.txt",function(responseText, textStatus, XMLHttpRequest){
 			if (textStatus == "success") {
 				$('.honeycombs').hide('slow');
@@ -23,8 +20,34 @@
 				alert ("Desculpe o transtorno, mas este docente não consta na nossa base de dados.");
 			}
 		});
+
+		// Foto
+		$("#foto").attr("src", endereco + professor + "/foto.jpg");
+
+		//Area de Conhecimento
+		$.get(endereco + professor + "/area_de_conhecimento.txt", function(data){
+			area_de_conhecimento=data
+		});
+
+		//Currículo
+		$.get(endereco + professor + "/curriculo_lattes.txt", function(data){
+			$("#curriculo_lattes").attr("href", data);
+		});
+
+		// Agenda
+		$.get(endereco + professor + "/agenda.txt", function(data){
+			$("#disciplinas_ministradas").attr("href", data);
+		}).fail(function(){
+			$("#disciplinas_ministradas").attr("href", endereco + professor + "/agenda.pdf");
+		});
+
+		// Hobby
+		$.get(endereco + professor + "/hobby.txt", function(data){
+			hobby=data
+		});
+
 	}
-	
+
 	$('#voltar_para_colmeia').click(function(){
 		$('.honeycombs').show('slow');
 		$('.chart-container').hide('slow');
@@ -45,6 +68,5 @@
 	});
 	fechar = function(){
 		$(".popUp").hide("slow", "swing");
-	};	
+	};
 }(jQuery));
-

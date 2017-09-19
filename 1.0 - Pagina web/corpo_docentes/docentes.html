@@ -12,21 +12,21 @@
 		<meta name="viewport"				content="width=device-width, initial scale=1" />
 		<meta name="robots" 				content="index,follow" />
 		<meta http-equiv="content-language"	content="pt-br" />
-		<link rel="icon"					href="../recursos/imagens/favicon.ico"  type="shortcut icon" /> 
-		
+		<link rel="icon"					href="../recursos/imagens/favicon.ico"  type="shortcut icon" />
+
 		<!-- CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-		<link rel="stylesheet" href="../recursos/css/bootstrap-theme.min.css" />  
-		<link rel="stylesheet" href="../recursos/css/breadcrumb.css"> 
-		<link rel="stylesheet" href="../recursos/css/template.css" />  
-		<link rel="stylesheet" href="../recursos/css/honeycombs.css" type="text/css"/>		
+		<link rel="stylesheet" href="../recursos/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="../recursos/css/breadcrumb.css">
+		<link rel="stylesheet" href="../recursos/css/template.css" />
+		<link rel="stylesheet" href="../recursos/css/honeycombs.css" type="text/css"/>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
 		<link rel="stylesheet" href="http://www.jqueryscript.net/css/jquerysctipttop.css" 	type="text/css">
 		<link rel="stylesheet" href="../recursos/css/stiff_chart/reset-html5.css" 			media="screen" />
 		<link rel="stylesheet" href="../recursos/css/stiff_chart/micro-clearfix.css" 		media="screen" />
 		<link rel="stylesheet" href="../recursos/css/stiff_chart/stiff-chart.css" 			media="screen" />
-		<link rel="stylesheet" href="../recursos/css/stiff_chart/custom.css" 				media="screen" />	
+		<link rel="stylesheet" href="../recursos/css/stiff_chart/custom.css" 				media="screen" />
 
 		<style>
 			.chart-container, #voltar_para_colmeia{
@@ -34,23 +34,23 @@
 			}
 		</style>
 	</head>
-		
+
 	<!--- CORPO DA PÁGINA --->
 	<body>
 		<div class="geral">
 			<!-- Barra de Navegação -->
 			<nav id="navbar"></nav>
-				
+
 			<!-- Wrap -->
-			<div id="wrap" class="container">		
+			<div id="wrap" class="container">
 				<!-- Título da Página -->
 				<div class="container-fluid fundo-titulo">
 					<div class="col-sm-3 col-xs-1">
-						<div id="bc1" class="myBreadcrumb">			
+						<div id="bc1" class="myBreadcrumb">
 							<a href="../index1.html" class="active"><i class="fa fa-home fa-2x"></i></a>
 							<a id="voltar_para_colmeia"><div>Todos os docentes</div></a>
 						</div>
-						<div id="bc2" class="myBreadcrumb">			
+						<div id="bc2" class="myBreadcrumb">
 							<a href="../index2.html" class="active"><i class="fa fa-chevron-left fa-2x"></i></a>
 						</div>
 					</div>
@@ -59,7 +59,7 @@
 					</div>
 				</div>
 				<p id="descricao" class="bg-success">Quadro de professores do DAELN.</p>
-				
+
 				<!-- Colmeia -->
 				<div class="honeycombs">
 					<div class="comb" onclick="seleciona_professor('alexandre_leizor')"> 	<img src="../recursos/corpo_docente/alexandre_leizor/foto_nome.jpg" 	alt="alexandre_leizor"/> <span></span> </div>
@@ -98,14 +98,14 @@
 					<div class="comb" onclick="seleciona_professor('robinson_pizzio')"> 	<img src="../recursos/corpo_docente/robinson_pizzio/foto_nome.jpg" 		alt="robinson_pizzio"/> <span></span> </div>
 					<div class="comb" onclick="seleciona_professor('samir_bonho')"> 		<img src="../recursos/corpo_docente/samir_bonho/foto_nome.jpg" 			alt="samir_bonho"/> <span></span> </div>
 				</div>
-				
+
 				<!-- Diagrama -->
 				<div class="chart-container">
 					<div id="your-chart-name">
 						<div class="stiff-chart-inner">
 							<div class="stiff-chart-level" data-level="01">
 								<div class="stiff-main-parent">
-									<ul>		  
+									<ul>
 										<li data-parent="a">
 											<div class="the-chart">
 												<img id="foto" class="img-circle" width="200" height="200" alt="foto_do_professor">
@@ -122,95 +122,71 @@
 										<li data-parent="a01">
 											<div class="the-chart" id="area_de_conhecimento">
 												<p>Area de conhecimento CNPq</p>
-											</div>  
+											</div>
 										</li>
-										<li data-parent="a02"><a id="curriculo_lattes" target="_blanck" >
+										<li data-parent="a02"><a id="curriculo_lattes" target="_blanck" href="">
 											<div class="the-chart">
 												<p>Currículo Lattes CNPq</p>
-											</div>  
+											</div>
 										</li></a>
 										<li data-parent="a03">
 											<div class="the-chart">
 												<p>Grupos de Pesquisa CNPq</p>
-											</div>  
+											</div>
 										</li>
-										<li data-parent="a04">
+										<li data-parent="a04"><a id="disciplinas_ministradas" target="_blanck" >
 											<div class="the-chart">
 												<p>Disciplinas Ministradas</p>
-											</div>  
-										</li>
+											</div>
+										</li></a>
 										<li data-parent="a05">
 											<div class="the-chart" id="hobby">
 												<p>Hobby</p>
-											</div>  
+											</div>
 										</li>
 									</ul>
 								</div>
 							</div>
-							
+
 							<div class="stiff-chart-level" data-level="03">
-								<div class="stiff-child" data-child-from="a04">
-									<ul>
-										<li data-parent="d1">
-											<div class="the-chart">
-												<p>Discipina 1</p>
-											</div>  
-										</li>
-										<li data-parent="d2">
-											<div class="the-chart">
-												<p>Discipina 2</p>
-											</div>  
-										</li>
-										<li data-parent="d3">
-											<div class="the-chart">
-												<p>Discipina 3</p>
-											</div>  
-										</li>
-										<li data-parent="d4">
-											<div class="the-chart">
-												<p>Discipina 4</p>
-											</div>  
-										</li>
-									</ul>
-								</div>
 								<div class="stiff-child" data-child-from="a03">
 									<ul>
 										<li data-parent="d1">
 											<div class="the-chart">
 												<p>Grupos 1</p>
-											</div>  
+											</div>
 										</li>
 										<li data-parent="d2">
 											<div class="the-chart">
 												<p>Grupos 2</p>
-											</div>  
+											</div>
 										</li>
 										<li data-parent="d3">
 											<div class="the-chart">
 												<p>Grupos 3</p>
-											</div>  
+											</div>
 										</li>
 									</ul>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div> 	
+				</div>
 
 				<!-- PopUp -->
 				<div class="popUp">
 					<h2 id="popup_titulo"></h2>
 					<p id="popup_descricao"></p>
 					<button id="botaoFechar" 		class="glyphicon-remove-sign" 	onclick="fechar();"				alt="Fechar"		title="Fechar"></button>
-				</div>				
+				</div>
 			</div>	<!-- /wrap -->
-			
+
 			<!-- Rodapé -->
 			<footer id="rodape"></footer>
 		</div>	<!-- /geral -->
-		
-		<!-- JavaScript load --> 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+
+		<!-- JavaScript load -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src="../recursos/js/dropdownNavbar.js"></script>
 		<script src="../recursos/js/jquery.honeycombs.js"></script>
@@ -228,7 +204,7 @@
 					layoutType: 'vertical', // 'vertical' or 'horizontal'
 					childCounter: false,
 					activeClass: 'chart-active',
-				});		
+				});
 			});
 		</script>
 	</body>

@@ -1,7 +1,12 @@
+<<<<<<< HEAD
+estudar ajax em jquery
+Finalizar tour virtual + botão "saiba mais"
+=======
 estudar método get/post
 página das laboratórios genérica e puxando os dados do model
 controle de versão com github
 tudo para hexagono > media query via js > hexágono responsivo
+>>>>>>> ade070f7f7f98f02707e6896edd3a55b589c89c5
  
 Portal de Horários - Campus Florianopolis (atualmente só para os cursos técnicos)
 incluir as empresas júniors? (ComandoEJ + http://www.ifsc.edu.br/extensao/empresas-juniores)
@@ -9,5 +14,10 @@ imagem aerea feita com drone. Áreas clicáveis.
 
 SEO: sitemap
 segurança: https e certificação sll
+<<<<<<< HEAD
+acessibilidade: alt em todas as imagens + teclas de atalho
+velocidade: css and js comprenssion (usando task runners)
+=======
 acessibilidade: alt em todas as imagens
 velocidade: css and js comprenssion
+>>>>>>> ade070f7f7f98f02707e6896edd3a55b589c89c5

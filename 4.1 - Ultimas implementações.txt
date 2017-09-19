@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+página dos docentes
+=======
+>>>>>>> ade070f7f7f98f02707e6896edd3a55b589c89c5
 ampliação do tour virtual
 otimiação da estrutura interna
 
