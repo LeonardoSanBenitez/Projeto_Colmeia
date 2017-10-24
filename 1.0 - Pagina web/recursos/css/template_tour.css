@@ -75,19 +75,23 @@
 }
 
 #info{
-	bottom: 5%;
-    left: 20%;
+	bottom: 50px;
+    left: 200px;
 }
-
+@media only screen and  (max-width:768px) {#info{left: 20px;bottom: 20px;}}
+@media only screen and  (max-width:480px) {#info{left: 20px;bottom: 150px;}}
 #ver360{
-	bottom: 5%;
-    left: 25%;
+	bottom: 50px;
+    left: 250px;
 }
-
+@media only screen and  (max-width:768px) {#ver360{left: 70px;bottom: 20px;}}
+@media only screen and  (max-width:480px) {#ver360{left: 20px;bottom: 100px;}}
 #video{
-	bottom: 5%;
-    left: 30%;
+	bottom: 50px;
+    left: 300px;
 }
+@media only screen and  (max-width:768px) {#video{left: 120px;bottom: 20px;}}
+@media only screen and  (max-width:480px) {#video{left: 20px;bottom: 50px;}}
 
 /***************************************************************
 ****                        LOADING                         ****
@@ -126,3 +130,18 @@
 	top: 50%;
 	left:35%;
 }
+
+
+/*
+#imgTour{
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	position:absolute;
+	
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}*/

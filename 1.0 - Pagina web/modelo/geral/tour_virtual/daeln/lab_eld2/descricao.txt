@@ -1,0 +1,1 @@
+﻿Dispõe de bancadas preparadas para o estudo de eletrônica digital, contendo diversos objetos de aprendizagem para a área e módulos didáticos para experimentos digitais. </br>Além disso, este laboratório está equipado com computadores, um projetor multimídia para a exibição de slides e instrumentos específicos para a área.

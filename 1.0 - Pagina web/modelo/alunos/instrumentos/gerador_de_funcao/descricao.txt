@@ -1,0 +1,1 @@
+﻿Aparelho eletrônico para gerar sinais elétricos e ajustar sua frequência, amplitude, forma de onda, etc.
