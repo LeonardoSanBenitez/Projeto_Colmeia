@@ -1,0 +1,1 @@
+﻿Aparelho eletrônico que efetua medição de sinais digitais e analógicos e os exibe em um display.

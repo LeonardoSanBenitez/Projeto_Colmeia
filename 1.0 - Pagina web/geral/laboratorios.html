@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<!--- CABEÇALHO --->
+	<head>
+		<!-- Definições Iniciais -->
+		<title>Laboratórios</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible"	content="IE=edge,chrome=1" />
+		<meta name="description"			content="Ferramenta para gestão do conhecimento no Deparamento Acadêmico de Eletrônica do IFSC." />
+		<meta name="keywords"				content="Colmeia, DAELN, IFSC" />
+		<meta name="author"					content="Leonardo Waideman and Leonardo Benitez" />
+		<meta name="viewport"				content="width=device-width, initial-scale=1" />
+		<meta name="robots" 				content="index,follow" />
+		<meta http-equiv="content-language"	content="pt-br" />
+		<link rel="icon"					href="../recursos/imagens/favicon.ico"  type="shortcut icon" />
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../recursos/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="../recursos/css/breadcrumb.css">
+		<link rel="stylesheet" href="../recursos/css/template.css">
+		<link rel="stylesheet" href="../recursos/css/honeycombs.css" type="text/css"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  </head>
+
+
+	<!--- CORPO DA PÁGINA --->
+	<body>
+		<div class="geral">
+			<!-- Barra de Navegação -->
+			<header id="navbar"></header>
+
+			<!-- Wrap -->
+			<main id="wrap" class="container">
+				<!-- Título da Página -->
+				<section class="container-fluid fundo-titulo">
+					<nav id="div_breadcrumb">
+						<div class="myBreadcrumb">
+							<a id="bc_0" href="" class="active"></a>
+							<a id="bc_1" href=""></a>
+							<a id="bc_3" href=""></a>
+							<a id="bc_4" href=""></a>
+							<a id="bc_5" href=""></a>
+							<a id="bc_6" href=""></a>
+						</div>
+					</nav>
+					<header id="div_titulo">
+						<h2 id="titulo_pagina" class="letra-titulo"></h2>
+					</header>
+				</section>
+				<p id="descricao_pagina" class="bg-success"></p>
+
+				<!-- Colmeia
+				<div class="container diamondswrap ">
+					<div class="row">
+						<div class="col-sm-12">
+							<a href="elp.html"		class="item"  data-toggle="tooltip"  data-placement="right" title="Laboratório de Eletrônica de Potência">				<img src="../recursos/imagens/laboratorios/elp.jpg"></a>
+							<a href="eld.html"		class="item"  data-toggle="tooltip"  data-placement="right" title="Laboratório de Eletrônica Digital 1">				<img src="../recursos/imagens/laboratorios/eld.jpg"></a>
+							<a href="#.html"		class="item"  data-toggle="tooltip"  data-placement="right" title="Laboratório de Eletrônica Digital 2">				<img src="../recursos/imagens/laboratorios/eld2.jpg"></a>
+							<a href="ld1.html"		class="item"  data-toggle="tooltip"  data-placement="right" title="Laboratório de Eletrônica Discreta 1">				<img src="../recursos/imagens/laboratorios/ld1.jpg"></a>
+							<a href="ld2.html"		class="item"  data-toggle="tooltip"  data-placement="right" title="Laboratório de Eletrônica Discreta 2">				<img src="../recursos/imagens/laboratorios/ld2.jpg"></a>
+							<a href="#.html"		class="item"  data-toggle="tooltip"  data-placement="right" title="Laboratório de Eletrônica Discreta 3">				<img src="../recursos/imagens/laboratorios/ld3.jpg"></a>
+							<a href="mcp.html"		class="item"  data-toggle="tooltip"  data-placement="right" title="Laboratório de Microprocessadores">					<img src="../recursos/imagens/laboratorios/mcp.jpg"></a>
+							<a href="dsp.html"		class="item"  data-toggle="tooltip"  data-placement="right" title="Laboratório de Processamento de Sinais Digitais">	<img src="../recursos/imagens/laboratorios/dsp.jpg"></a>
+							<a href="lsc.html"		class="item"  data-toggle="tooltip"  data-placement="right" title="Laboratório de Sistemas Computadorizados">			<img src="../recursos/imagens/laboratorios/lsc.jpg"></a>
+							<a href="lsi.html"		class="item"  data-toggle="tooltip"  data-placement="right" title="Laboratório de Sistemas Informatizados">				<img src="../recursos/imagens/laboratorios/lsi.jpg"></a>
+						</div>
+					</div>
+				</div>-->
+
+				<!-- Colmeia -->
+				<article class="honeycombs">
+					<div class="comb" onclick="seleciona_laboratorio('lab_dsp')"> 	<img src="../modelo/geral/tour_virtual/daeln/lab_dsp/foto_nome.jpg" 	alt="lab_dsp"/> <span></span> </div>
+					<div class="comb" onclick="seleciona_laboratorio('lab_eld1')"> 	<img src="../modelo/geral/tour_virtual/daeln/lab_eld1/foto_nome.jpg" 	alt="lab_eld1"/> <span></span> </div>
+					<div class="comb" onclick="seleciona_laboratorio('lab_eld2')"> 	<img src="../modelo/geral/tour_virtual/daeln/lab_eld2/foto_nome.jpg" 	alt="lab_eld2"/> <span></span> </div>
+					<div class="comb" onclick="seleciona_laboratorio('lab_elp')"> 	<img src="../modelo/geral/tour_virtual/daeln/lab_elp/foto_nome.jpg" 	alt="lab_elp"/> <span></span> </div>
+					<div class="comb" onclick="seleciona_laboratorio('lab_emc')"> 	<img src="../modelo/geral/tour_virtual/daeln/lab_emc/foto_nome.jpg" 	alt="lab_emc"/> <span></span> </div>
+					<div class="comb" onclick="seleciona_laboratorio('lab_ld1')"> 	<img src="../modelo/geral/tour_virtual/daeln/lab_ld1/foto_nome.jpg" 	alt="lab_ld1"/> <span></span> </div>
+					<div class="comb" onclick="seleciona_laboratorio('lab_ld2')"> 	<img src="../modelo/geral/tour_virtual/daeln/lab_ld2/foto_nome.jpg" 	alt="lab_ld2"/> <span></span> </div>
+					<div class="comb" onclick="seleciona_laboratorio('lab_ld3')"> 	<img src="../modelo/geral/tour_virtual/daeln/lab_ld3/foto_nome.jpg" 	alt="lab_ld3"/> <span></span> </div>
+					<div class="comb" onclick="seleciona_laboratorio('lab_lsc')"> 	<img src="../modelo/geral/tour_virtual/daeln/lab_lsc/foto_nome.jpg" 	alt="lab_lsc"/> <span></span> </div>
+					<div class="comb" onclick="seleciona_laboratorio('lab_lsi')"> 	<img src="../modelo/geral/tour_virtual/daeln/lab_lsi/foto_nome.jpg" 	alt="lab_lsi"/> <span></span> </div>
+					<div class="comb" onclick="seleciona_laboratorio('lab_mcp')"> 	<img src="../modelo/geral/tour_virtual/daeln/lab_mcp/foto_nome.jpg" 	alt="lab_mcp"/> <span></span> </div>
+				</article>
+
+				<!-- Conteudos -->
+				</br>
+				<article id="ver360"></article>
+				</br>
+				<article id="video"></article>
+				</br>
+				<article id="instrumentos"></article>
+			</main>
+
+			<!-- Iframe -->
+
+			<!-- Rodapé -->
+			<footer id="rodape"></footer>
+		</div>
+
+		<!-- Java Script -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="../recursos/js/dropdownNavbar.js"></script>
+		<script src="../recursos/js/jquery.honeycombs.js"></script>
+		<script src="../recursos/js/script_laboratorios.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$( "#navbar" ).load( "../recursos/html/navbar.html #second-level" );
+				$( "#rodape" ).load( "../recursos/html/rodape.html #second-level" );
+
+				$("#bc_0").show().attr("href", "../index1.html").html("<i class='fa fa-home fa-2x'></i>");
+				$("#bc_1").hide().attr("href", "laboratorios.html").text("Laboratórios");
+				if(parseInt($(window).width()) < 700){
+					$("#bc_1").html("<i class='fa fa-chevron-left' aria-hidden='true'></i><i class='fa fa-chevron-left' aria-hidden='true'></i>")
+					$("#bc_2").html("<i class='fa fa-chevron-left' aria-hidden='true'></i>");
+				}
+				$("#titulo_pagina").text("Laboratórios");
+				$("p#descricao_pagina").html("O Departamento Acadêmico de Eletrônica dispõe de 10 laboratórios especializados, todos equipados com computadores, projetores multimídia para a exibição de slides e instrumentos específicos para a área. </br>Clique <a class='linkAzul' href='../modelo/geral/tour_virtual/daeln/mapa.jpg'>aqui</a> para acessar o mapa do departamento.");
+
+				$('.honeycombs').honeycombs({});
+			});
+		</script>
+	</body>
+</html>

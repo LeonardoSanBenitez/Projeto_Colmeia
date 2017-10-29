@@ -9,7 +9,7 @@
 		<meta name="description"			content="Conheça nosso departamento através deste tour virtual." />
 		<meta name="keywords"				content="Colmeia, DAELN, IFSC, Tour, Virtual" />
 		<meta name="author"					content="Leonardo Benitez" />
-		<meta name="viewport"				content="width=device-width, initial scale=1" />
+		<meta name="viewport"				content="width=device-width, initial-scale=1" />
 		<meta name="robots" 				content="index,follow" />
 		<meta http-equiv="content-language"	content="pt-br" />
 		<link rel="icon"					href="recursos/imagens/favicon.ico"  type="shortcut icon" /> 
@@ -26,12 +26,13 @@
 	<body>
 		<div id="loading"><i class="fa fa-cog fa-spin fa-3x fa-fw"></i></div>
 		<!-- Barra de Navegação -->
-		<nav id="navbar"></nav>
+		<header id="navbar"></header>
 		
 		<!-- Wrap -->
 		<div class="wrap-full-height-width">
-			<img id="imgTour"	class="img-full-height" src="recursos/imagens/hall.jpg" /> <!-- OU https://static.pexels.com/photos/17679/pexels-photo.jpg -->
-			
+			<img id="imgTour"	class="img-full-height" /><!--  OU https://static.pexels.com/photos/17679/pexels-photo.jpg 
+			<div id="imgTour"></div>-->
+
 			<p id="proximo"		role="button"	class="glyphicon-arrow-up" 		onclick="proximo('imgTour');" 	alt="Proximo" 		title="Proximo"></p>
 			<p id="anterior"	role="button"	class="glyphicon-arrow-down" 	onclick="anterior('imgTour');"	alt="Anterior"		title="Anterior"></p>
 			<p id="esquerda"	role="button"	class="glyphicon-arrow-left" 	onclick="esquerda('imgTour');"	alt="Esquerda"		title="Esquerda"></p>
@@ -42,7 +43,7 @@
 	
 			<div class="popUp">
 				<h2 id="nome">Nome do Laboratório</h2>
-				<p id="descricao">Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição </p>
+				<p id="descricao">Descrição Descrição Descrição Descrição</p>
 				<button id="botaoFechar" 		class="glyphicon-remove-sign" 	onclick="fechar();"				alt="Fechar"		title="Fechar"></button>
 			</div>
 		</div>	
@@ -60,6 +61,7 @@
 				$('#imgTour').bind('load', function(){ // image ready
 					$("#loading").hide("fast", "swing");
 				});	
+				hall_1 ('imgTour');
 			});
 		</script>	
 	</body>

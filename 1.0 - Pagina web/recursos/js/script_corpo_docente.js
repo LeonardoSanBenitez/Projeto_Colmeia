@@ -1,6 +1,6 @@
 (function($) {
 	/* Variável Globais */
-	var endereco = "../recursos/corpo_docente/";
+	var endereco = "../modelo/geral/corpo_docente/";
 	var area_de_conhecimento;
 	var hobby;
 

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<!--- CABEÇALHO --->
+	<head>
+		<!-- Definições Iniciais -->
+		<title>Tecnologias Eletrônicas</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible"	content="IE=edge,chrome=1" />
+		<meta name="description"			content="Ferramenta para gestão do conhecimento no Deparamento Acadêmico de Eletrônica do IFSC." />
+		<meta name="keywords"				content="Colmeia, DAELN, IFSC" />
+		<meta name="author"					content="Leonardo Waideman and Leonardo Benitez" />
+		<meta name="viewport"				content="width=device-width, initial-scale=1" />
+		<meta name="robots" 				content="index,follow" />
+		<meta http-equiv="content-language"	content="pt-br" />
+		<link rel="icon"					href="../recursos/imagens/favicon.ico"  type="shortcut icon" />
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../recursos/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="../recursos/css/breadcrumb.css">
+		<link rel="stylesheet" href="../recursos/css/template.css">
+		<link rel="stylesheet" href="../recursos/css/honeycombs.css" type="text/css"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  	</head>
+
+	<!--- CORPO DA PÁGINA --->
+	<body>
+		<div class="geral">
+			<!-- Barra de Navegação -->
+			<header id="navbar"></header>
+
+			<!-- Wrap -->
+			<main id="wrap" class="container">
+				<!-- Título da Página -->
+				<section id="titulo"></section>
+
+				<!-- Colmeia -->
+				<article class="honeycombs">
+					<div class="comb" onclick="seleciona_conteudo('theremin')"> 	<img src="../modelo/alunos/tecnologias_eletronicas/theremin/foto_nome.jpg" 	alt="theremin"/> <span></span> </div>
+				</article>
+
+				<!-- Conteudo -->
+				<article id="conteudo"></article>
+				</br>
+			</main>
+
+			<!-- Rodapé-->
+			<footer id="rodape"></footer>
+		</div>
+
+		<!-- Java Script -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="../recursos/js/dropdownNavbar.js"></script>
+		<script src="../recursos/js/jquery.honeycombs.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$( "#navbar" ).load( "../recursos/html/navbar.html #fazer-educacional" );
+				$( "#rodape" ).load( "../recursos/html/rodape.html #second-level" );
+				$( "#titulo" ).load( "../recursos/html/titulo.html", function(){
+					$("#bc_0").show().attr("href", "../index1.html").html("<i class='fa fa-home fa-2x'></i>");
+					$("#bc_1").show().attr("href", "../index2.html").text("Fazer Educacional");
+					$("#bc_2").hide().attr("href", "").text("Tecnologias Eletrônicas");
+					if(parseInt($(window).width()) < 700){
+						$("#bc_1").html("<i class='fa fa-chevron-left' aria-hidden='true'></i><i class='fa fa-chevron-left' aria-hidden='true'></i>")
+						$("#bc_2").html("<i class='fa fa-chevron-left' aria-hidden='true'></i>");
+					}
+					$("#titulo_pagina").text("Tecnologias Eletrônicas");
+					$("p#descricao_pagina").html("Descubra quais são as principais tecnologias utilizadas na eletrônica.");
+				});
+				$('.honeycombs').honeycombs({});
+
+				var endereco = "../modelo/alunos/tecnologias_eletronicas/";
+				seleciona_conteudo = function(conteudo){
+					// Nome
+					$("#titulo_pagina").load(endereco + conteudo + "/nome.txt",function(responseText, textStatus, XMLHttpRequest){
+						if (textStatus == "success") {
+							$('.honeycombs').hide('slow');
+							$("#bc_2").show();
+						}
+						if (textStatus == "error") {
+							alert ("Desculpe o transtorno, mas este laboratorio não consta na nossa base de dados.");
+						}
+					});
+
+					// Descrição
+					$("#descricao_pagina").load(endereco + conteudo + "/descricao.txt");
+
+					// Conteudo
+					$("#conteudo").load(endereco + conteudo + "/conteudo.html");
+				}
+			});
+		</script>
+	</body>
+</html>

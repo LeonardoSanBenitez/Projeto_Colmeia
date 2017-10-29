@@ -1,0 +1,2 @@
+﻿Equipamento que, além de transmitir potência elétrica de um circuito a outro, é capaz de variar a relação entre a tensão de entrada e de saída.
+

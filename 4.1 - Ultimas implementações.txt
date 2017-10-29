@@ -1,10 +1,12 @@
-<<<<<<< HEAD
-página dos docentes
-=======
->>>>>>> ade070f7f7f98f02707e6896edd3a55b589c89c5
+finalizar tour virtual
+Incluir vídeos de experimentos
+
+página dos docentes (informações e agenda) e administrativos
+incluir os ultimos laboratórios 
 ampliação do tour virtual
 otimiação da estrutura interna
 
 fixação do rodapé
 Breadcrumb
 publiquei no google
+

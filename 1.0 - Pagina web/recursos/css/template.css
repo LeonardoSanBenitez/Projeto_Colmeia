@@ -8,7 +8,7 @@
 		Breakpoint-alfa: 480px;
 		Breakpoint-beta: 678px;
 		Breakpoint-charlie: 998px;
-		Breakpoint-charlie: 1200px;
+		Breakpoint-delta: 1200px;
 ***************************************************************/
 
 
@@ -80,7 +80,6 @@ html,body {
 	
 	height: 100%;
 	min-height: 100%;
-	
 }
 .img-full-height-width{
 /*	position:absolute;
@@ -130,11 +129,19 @@ html,body {
 	text-decoration: underline;
 	font-size: 5em;
 }
+@media only screen and  (max-width:768px) {.popUp h2{font-size: 3em;}}
 .popUp p{
 	font-size: 3em;
 	text-align: justify;
 	margin-left:20px;
 	margin-right:20px;
+}
+@media only screen and  (max-width:768px) {.popUp p{font-size: 2em;}}
+.popUp iframe{
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	display:block;
 }
 #botaoFechar{
     position: absolute;
@@ -289,17 +296,25 @@ html,body {
 	background-color: #2a2a2b;
 	margin-top: 25px;
 	margin-bottom: 10px;
+	padding-left: 30px;
 	height: 61px;
+	overflow: visible;
+	z-index: 10;
 	
 	border-top: solid 2px rgb(217, 237, 247);			
 	border-radius: 10px 0px 30px 10px;
 	box-shadow: 2px 2px 2px 2px #999;
 }
+
 .fundo-titulo .letra-titulo{
-	position: relative;
-	padding: 12px 50px 12px 12px;
+	position: absolute;
+	right: 50px;
+	line-height:61px;
+	left:12px;
 	margin:0px;
+	padding:0px;
 	font-size: 5.5em;
+	z-index: -1;
 	
 	text-align: right; 
 	vertical-align:center;
@@ -307,6 +322,18 @@ html,body {
 }
 .fundo-titulo .letra-titulo::first-letter{
 	color:#8dc641;
+}
+@media only screen and  (max-width: 998px) {
+	.fundo-titulo .letra-titulo{ 
+		font-size: 4.5em;
+		right: 30px;
+	}
+}
+@media only screen and  (max-width: 768px) {
+	.fundo-titulo .letra-titulo{ 
+		font-size: 3.5em;
+		/* right: 20px; */
+	}
 }
 .descricao-pagina{
 	margin-bottom: 10px;
