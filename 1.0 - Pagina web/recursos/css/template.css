@@ -219,17 +219,21 @@ html,body {
 	margin: 3px 3px 3px 3px;
 	color: white;
 	text-decoration:none;
+	transition: 0.3s;
 }
 .rodape a:hover{
 	color:#8dc641;
+	transition: 0.3s;
 }
 
 .imagens-rodape{
   padding: 0px;
+  transition: 0.3s;
 
 }
 .imagens-rodape:hover{
-	padding-left:3px;	
+	padding-left:3px;
+	transition: 0.3s;	
 }
 @media only screen and  (max-width: 768px) {
    .imagens-rodape{

@@ -1,10 +1,10 @@
-novos links uteis
-	ilha digital (pergunta pro azevedo)
-	portal do aluno
-	ouvidoria 
+responsividade de breadcrumb 
+	diminuir letra
+	adicionar padding esquerdo à letra
+	Quebrar a linha quando estiver no celular
 Centralizar imagem do Tour Virtual
 
+acessibilidade:	teclas de atalho
 SEO:		sitemap
-acessibilidade:	alt em todas as imagens + teclas de atalho
 velocidade: 	css and js comprenssion (usando task runners)
 github:		colocar o model em um submodule separado ou, até mesmo, em um repositório separado (mas só se o repositorio de imagens ficar muito grande)

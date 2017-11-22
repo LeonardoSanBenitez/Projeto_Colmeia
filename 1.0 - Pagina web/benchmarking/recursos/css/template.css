@@ -1,0 +1,51 @@
+﻿/***************************************************************
+****                        GERAL                           ****
+***************************************************************/
+body{
+	top			: 0;
+	bottom		: 0;
+    right		: 0;
+	left		: 0;
+    margin		: 0;
+    padding		: 0;
+	z-index		: 1;
+    position	: absolute;
+	height		: 100%;
+	font-size	: 62.5%;
+	text-align	: center;
+}
+p{
+	font-size	: 250%;
+}
+
+/***************************************************************
+****                    QUESTIONÁRIO                        ****
+***************************************************************/
+
+/* Cursores */
+#r1, #r2, #r3, #r4, #r5{
+	cursor: pointer;
+}
+
+/* Cores e estética */
+#id, #pt {
+	background-color: #8fba8f;
+}
+#r1, #r3, #r5{
+	background-color: #c4ffc4;
+}
+#questionario, #grafico{
+	display: none;
+}
+
+/* Parágrafos */
+#r1 p, #r2 p, #r3 p, #r4 p, #r5 p, .modal-body p{
+	text-align	: justify;
+}
+
+/* Tamanhos */
+@media only screen and  (min-width:992px){
+	#id, #r1, #r2, #r3, #r4, #r5, #pt{
+		min-height: 500px;
+	}
+}
