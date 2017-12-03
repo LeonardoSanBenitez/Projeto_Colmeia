@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br" ng-app="bench">
 	<head>
 		<!-- Definições Iniciais -->
@@ -19,7 +19,7 @@
 		<link rel="stylesheet" href="recursos/css/template.css" />
 	</head>
 	
-	<body ng-controller="bench_controller" ng-init="proxima_pagina(0);">
+	<body ng-controller="bench_controller" ng-init="proxima_pagina();">
 		<div class="geral">
 			<!-- Navbar -->
 			<nav class="navbar navbar-default">
@@ -32,7 +32,7 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="">Benchmarking</a>
+						<a class="navbar-brand" href="">{{titulo}}</a>
 					</div>
 
 					<!-- Collect the nav links, forms, and other content for toggling -->
@@ -46,43 +46,47 @@
 			
 			<div class="container-fluid wrap">
 				<!-- Título -->
-				<header class="row"><h1 ng-bind="area_titulo"></h1></header>
+				<header class="row"><h1 id="questionario_titulo"></h1></header>
 				<hr>
+				<!-- Página Inicial 
+				<section id="pagina_inicial" class="row"></section>-->
 				
 				<!-- Questionário -->
 				<section id="questionario" class="row">
-					<article class="col-md-2 col-principal">
-						<h2 ng-bind="id_titulo"></h2>
-						<p ng-bind="id_texto"></p>
+					<article id="id" class="col-md-2">
+						<h2 id="id_titulo"></h2>
+						<p id="id_texto"></p>
 						</br>
 						<button title="Ajuda" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ajuda"><i class='fa fa-question fa-2x'></i></button>
 					</article>
 
-					<article ng-click="proxima_pagina(1)" class="col-md-2 col-resposta verde">
+					<article ng-click="proxima_pagina()" id="r1" class="col-md-2">
 						<h2>1</h2>
 						<!-- <p id="r1_texto"></p> -->
 						<p ng-bind="r1_texto"></p>
 					</article>	
 
-					<article ng-click="proxima_pagina(2)" class="col-md-1 col-resposta">
+					<article id="r2" class="col-md-1">
 						<h2>2</h2>
+						<p id="r2_texto"></p>
 					</article>
 
-					<article ng-click="proxima_pagina(3)" class="col-md-2 col-resposta verde">
+					<article id="r3" class="col-md-2">
 						<h2>3</h2>
-						<p ng-bind="r3_texto"></p>
+						<p id="r3_texto"></p>
 					</article>		
 
-					<article ng-click="proxima_pagina(4)" class="col-md-1 col-resposta">
+					<article id="r4" class="col-md-1">
 						<h2>4</h2>
+						<p id="r4_texto"></p>
 					</article>
 
-					<article ng-click="proxima_pagina(5)" class="col-md-2 col-resposta verde">
+					<article id="r5" class="col-md-2">
 						<h2>5</h2>
-						<p ng-bind="r5_texto"></p>
+						<p id="r5_texto"></p>
 					</article>
 
-					<article class="col-md-2 col-principal">
+					<article id="pt" class="col-md-2">
 						<h2>Pontuação</h2>				
 						<table class="table table-condensed">
 							<tr>
@@ -108,7 +112,7 @@
 							<div class="chartCanvasWrap"></div>
 						</div>
 					</div>
-					<div class="row"><button ng-click="proxima_pagina(0)" type="button" class="btn btn-primary btn-lg">Próximo Questionário</button></div>
+					<div class="row"><button id="proximo_questionario" type="button" class="btn btn-primary btn-lg">Próximo Questionário</button></div>
 				</section>
 				
 				<!-- Modal Ajuda -->
@@ -118,10 +122,10 @@
 					<div class="modal-content">
 					  <header class="modal-header">
 						<button type="button" class="close" data-dismiss="modal">&times;</button>
-						<h4 ng-bind="ajuda_titulo" class="modal-title"></h4>
+						<h4 id="ajuda_titulo" class="modal-title"></h4>
 					  </header>
 					  <article class="modal-body">
-						<p ng-bind="ajuda_texto"></p>
+						<p id="ajuda_texto"></p>
 					  </article>
 					  <footer class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
@@ -168,7 +172,23 @@
  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>		
 		<script src="recursos/js/jquery-radar-plus.js"></script>		
+ 		<script src="recursos/js/jquery_ajax.js"></script>		
  		<script src="recursos/js/angular_controller.js"></script>		
+		<script>
+			$(document).ready(function(){
+				carrega_pagina ();
+
+				//$('#r1').click(function(){proxima_pagina(1)});
+				$('#r2').click(function(){proxima_pagina(2)});
+				$('#r3').click(function(){proxima_pagina(3)});
+				$('#r4').click(function(){proxima_pagina(4)});
+				$('#r5').click(function(){proxima_pagina(5)});
+				$('#proximo_questionario').click(function(){proxima_pagina(5)});
+				
+				//$('#pagina_inicial').click(function(){proxima_pagina(0)});
+				//$('#pagina_inicial').html(modelo/descricao.txt);
+			});
+		</script>
 		<script>
 
 		</script>

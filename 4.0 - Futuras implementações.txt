@@ -1,8 +1,24 @@
+----
+LAYOUT
+----
 responsividade de breadcrumb 
 	diminuir letra
 	adicionar padding esquerdo à letra
 	Quebrar a linha quando estiver no celular
 Centralizar imagem do Tour Virtual
+
+
+----
+FUNCIONALIDADES
+----
+navbar:		só o link para seção ou também um dropdown com o conteudo de cada seção?
+pagina inicial: prévias de cada seção ou notícias e eventos?
+cada seção:	Prévias de cada página específica com um botão "saiba mais" 
+
+----
+IMPLEMENTAÇÕES TÉCNICAS
+----
+"add class" com jquery 
 
 acessibilidade:	teclas de atalho
 SEO:		sitemap
