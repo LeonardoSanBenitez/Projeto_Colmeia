@@ -1,16 +1,5 @@
 (function($) {
 	var local = "home";
-	/* Funções da triagem 
-	DAELN = function(){
-		$("#triagem").hide("slow", "swing");
-		$("#DAELN").show("slow", "swing");
-		$("#voltar").show("slow", "swing");
-	}
-	docentes = function(){
-		$("#triagem").hide("slow", "swing");
-		$("#docentes").show("slow", "swing");
-		$("#voltar").show("slow", "swing");
-	}*/
 	bvoltar = function(departamento){
 		if (local == "daeln-departamento"){
 			$(".conteudo").hide("slow", "swing");

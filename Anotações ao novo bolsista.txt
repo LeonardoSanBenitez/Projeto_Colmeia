@@ -1,0 +1,2 @@
+estavamos em período de transição
+o template antigo está um misto da zueira antiga com uma tentativa de padrão mvc 

@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br" ng-app="bench">
+	<head>
+		<!-- Definições Iniciais -->
+		<title>Benchmarking</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible"	content="IE=edge,chrome=1" />
+		<meta name="description"			content="Questionário institucional do Departamento Acadêmico de Eletrônica, IFSC." />
+		<meta name="keywords"				content="Benchmarking, DAELN, IFSC" />
+		<meta name="author"					content="Leonardo Benitez" />
+		<meta name="viewport"				content="width=device-width, initial-scale=1" />
+		<meta name="robots" 				content="index,follow" />
+		<meta http-equiv="content-language"	content="pt-br" />
+		<link rel="icon"					href="recursos/imagens/favicon.ico"  type="shortcut icon" />
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="recursos/css/template.css" />
+	</head>
+	
+	<body ng-controller="bench_controller" ng-init="proxima_pagina(0);">
+		<div class="geral">
+			<!-- Navbar -->
+			<nav ng-include="recursos/html/navbar.html" class="navbar navbar-default">	</nav>
+			
+			<div class="container-fluid wrap">
+				<!-- Título -->
+				<header class="row"><h1 ng-bind="area_titulo"></h1></header>
+				<hr>
+				
+				<!-- Questionário -->
+				<section id="questionario" class="row">
+					<article class="col-md-2 col-principal">
+						<h2 ng-bind="id_titulo"></h2>
+						<p ng-bind="id_texto"></p>
+						</br>
+						<button title="Ajuda" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ajuda"><i class='fa fa-question fa-2x'></i></button>
+					</article>
+
+					<article ng-click="proxima_pagina(1)" class="col-md-2 col-resposta verde">
+						<h2>1</h2>
+						<!-- <p id="r1_texto"></p> -->
+						<p ng-bind="r1_texto"></p>
+					</article>	
+
+					<article ng-click="proxima_pagina(2)" class="col-md-1 col-resposta">
+						<h2>2</h2>
+					</article>
+
+					<article ng-click="proxima_pagina(3)" class="col-md-2 col-resposta verde">
+						<h2>3</h2>
+						<p ng-bind="r3_texto"></p>
+					</article>		
+
+					<article ng-click="proxima_pagina(4)" class="col-md-1 col-resposta">
+						<h2>4</h2>
+					</article>
+
+					<article ng-click="proxima_pagina(5)" class="col-md-2 col-resposta verde">
+						<h2>5</h2>
+						<p ng-bind="r5_texto"></p>
+					</article>
+
+					<article class="col-md-2 col-principal">
+						<h2>Pontuação</h2>				
+						<table class="table table-condensed">
+							<tr>
+								<th>Pergunta</th>
+								<th>Resposta</th>
+							</tr>
+							<tr ng-repeat="(x, y) in historico">
+								<td>{{x}}</td>
+								<td>{{y}}</td>
+							</tr>
+						</table>						
+						
+						
+						<button title="Sair" type="button" class="btn btn-primary btn-lg">Sair</button>
+					</article>			
+				</section>
+				
+				<!-- Gráfico -->
+				<section id="grafico">
+					<div class="row skillsPieChart" data-values='{"Compromisso": 5,"Organização": 4,"Capacidade de inovar":3,"Tolerância":5,"Fazer docente":4,"Intelectualidade":4,"Autonomia":5,"Identidade profissional":4}'
+					data-width="300" data-height="100" data-red="0" data-green="128" data-blue="255" style="margin-bottom:5px;">
+						<div style="text-align: center;">
+							<div class="chartCanvasWrap"></div>
+						</div>
+					</div>
+					<div class="row"><button ng-click="proxima_pagina(0)" type="button" class="btn btn-primary btn-lg">Próximo Questionário</button></div>
+				</section>
+				
+				<!-- Modal Ajuda -->
+				<section id="ajuda" class="modal fade" role="dialog">
+				  <div class="modal-dialog">
+					<!-- Modal content-->
+					<div class="modal-content">
+					  <header class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 ng-bind="ajuda_titulo" class="modal-title"></h4>
+					  </header>
+					  <article class="modal-body">
+						<p ng-bind="ajuda_texto"></p>
+					  </article>
+					  <footer class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+					  </footer>
+					</div>
+				  </div>
+				</section>		
+				
+				<!-- Modal About -->
+				<section id="about" class="modal fade" role="dialog">
+				  <div class="modal-dialog">
+					<!-- Modal content-->
+					<div class="modal-content">
+					  <header class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Benchmarking</h4>
+					  </header>
+					  <article class="modal-body">
+						<p>A ferramenta Benchmarking... processos de ensino e de aprendizagem... Departamento Acadêmico de Eletrônica</p>
+					  </article>
+					  <footer class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+					  </footer>
+					</div>
+				  </div>
+				</section>
+			</div>
+				
+			<footer class="container-fluid rodape" >
+				<!-- Identificação do rodapé -->
+				<div class="row rodape"> 
+					<p>© 2017 Grupo de Pesquisa em Educação Tecnológica - DAELN</p></br>
+					<a class="fa fa-facebook-square"	target="_blanck" href="https://www.facebook.com/eletronica.ifsc"></a> 
+					<a class="fa fa-youtube-square"		target="_blanck" href="https://www.youtube.com/user/EletronicaIFSC"></a> 
+					<a class="fa fa-google-plus-square"	target="_blanck" href="https://plus.google.com/101294312921190812200"></a> 
+					<a class="fa fa-instagram"			target="_blanck" href="https://www.instagram.com/explore/locations/218004176/ifsc-campus-florianopolis/"></a> 
+					<a class="fa fa-twitter-square"		target="_blanck" href="https://twitter.com/ifscfloripa"></a> 
+				</div>
+			</footer>
+		</div>
+		
+		<!-- Java Script -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>		
+		<script src="recursos/js/jquery-radar-plus.js"></script>		
+ 		<script src="recursos/js/angular_controller.js"></script>		
+	</body>
+</html>

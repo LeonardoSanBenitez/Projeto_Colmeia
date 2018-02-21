@@ -509,6 +509,7 @@
 	***************************************************************/	
 	
 	hide_show = function (anterior, esquerda, proximo, direita, info, ver360, video){
+		// Oculta ou mostra os 7 botões flutuantes do tour (4 de direção e 3 de informações)
 		if (anterior)	{$("#anterior").show("slow", "swing");}		else{$("#anterior").hide("slow", "swing");};
 		if (esquerda)	{$("#esquerda").show("slow", "swing");}		else{$("#esquerda").hide("slow", "swing");};
 		if (proximo)	{$("#proximo").show("slow", "swing");}		else{$("#proximo").hide("slow", "swing");};
@@ -519,6 +520,7 @@
 	}
 	
 	mascara_de_carregamento = function (img){
+		// Mostra aquele gif de loading se demorar muito
 		setTimeout(function(){								// Executa após 500ms 
 			var x = document.getElementById(img).complete;	// Retorna True se a imagem carregou
 			if(x){

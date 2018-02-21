@@ -1,0 +1,65 @@
+<!-------------------------------------------------------------
+Author: 		W3layouts
+Author URL: 	http://w3layouts.com
+Edited by:		Leonardo Benitez 
+License: 		Creative Commons Attribution 3.0 Unported
+License URL:	http://creativecommons.org/licenses/by/3.0/
+------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Definião Iniciais -->
+	<title>Projetos Desenvolvidos</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible"	content="IE=edge,chrome=1" />
+	<meta name="description"			content="Descubra o que nos fazemos, descubra quem somos" />
+	<meta name="keywords"				content="Colmeia, DAELN, IFSC" />
+	<meta name="author"					content="Leonardo Benitez" />
+	<meta name="viewport"				content="width=device-width, initial-scale=1" />
+	<meta name="robots" 				content="index,follow" />
+	<meta http-equiv="content-language"	content="pt-br" />
+	<link rel="icon"					href="../../model/favicon.ico"  type="shortcut icon" />
+
+	<!-- CSS -->
+	<link rel="stylesheet"				href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+	<link rel="stylesheet"				href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet"				href="../../recursos/css/style.css" />	
+</head>
+
+<body>
+	<!-- Navbar -->
+	<nav id="navbar" class="banner inner-banner-w3l"></nav>
+	
+	<!-- Conteúdo -->
+	<section class="inner-padding">
+		<div class="container">
+			<h3 class="heading-agileinfo">Projetos desenvolvidos<span>Nós somos o que nos fazemos.</span></h3>
+			<div class="clearfix"> </div>
+			<img class="center-block img-responsive" src="https://i.ytimg.com/vi/An05hFtM6hk/maxresdefault.jpg"/>
+		</div>
+	</section>
+	
+	<!-- Back to the top -->
+	<br><br>
+	<a href="#navbar" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+	<!-- Rodapé -->
+	<footer id="rodape"></footer>
+
+	<!-- Javascript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="../../recursos/js/SmoothScroll.min.js"></script>
+	<script src="../../recursos/js/move-top.js"></script>
+	<script src="../../recursos/js/easing.js"></script>
+	<script>
+		jQuery(document).ready(function($) {
+			$().UItoTop({});
+			
+			$("#navbar").load("../../recursos/html/navbar.html #segundo_nivel", function(){$("#sobre_nos").addClass("active");});
+			$("#rodape").load("../../recursos/html/rodape.html #segundo_nivel");		
+		});
+	</script>
+</body>
+</html>

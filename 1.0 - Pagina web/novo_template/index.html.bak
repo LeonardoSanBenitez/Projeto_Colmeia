@@ -1,0 +1,290 @@
+<!-------------------------------------------------------------
+Author: 		W3layouts
+Author URL: 	http://w3layouts.com
+Edited by:		Leonardo Benitez 
+License: 		Creative Commons Attribution 3.0 Unported
+License URL:	http://creativecommons.org/licenses/by/3.0/
+------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Definião Iniciais -->
+	<title>Colmeia</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible"	content="IE=edge,chrome=1" />
+	<meta name="description"			content="Ferramenta para gestão do conhecimento do DAELN, IFSC." />
+	<meta name="keywords"				content="Colmeia, DAELN, IFSC" />
+	<meta name="author"					content="Leonardo Benitez" />
+	<meta name="viewport"				content="width=device-width, initial-scale=1" />
+	<meta name="robots" 				content="index,follow" />
+	<meta http-equiv="content-language"	content="pt-br" />
+	<link rel="icon"					href="recursos/imagens/favicon.ico"  type="shortcut icon" />
+
+	<!-- CSS -->
+	<link rel="stylesheet"				href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+	<link rel="stylesheet"				href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet"				href="recursos/css/style.css" />	
+</head>
+
+<body>
+	<!-- Header -->
+	<header class="banner w3l">		
+		<!-- Navbar -->
+		<nav id="navbar" ></nav>
+		
+		<!-- Banner -->
+		<div class="container">
+			<div class="banner-info wow bounceInDown" data-wow-duration="1s" data-wow-delay="0s">
+				<div class="callbacks_container">
+					<ul class="rslides" id="slider3">
+						<li>
+							<div class="banner-text">
+								<h3>Departamento de excelência em</h3>
+								<h4>Educação</h4>
+								<p>Revolucionamos a forma de ensinar, valoriando a reflexão, intuição, sensibilidade e habilidades sociais. Se cada pessoa é única, então devemos valorizar a nossa singularidade.</p>
+								<div class="more-button">
+									<a href="#" data-toggle="modal" data-target="#modal_educacao">Saiba mais</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="banner-text">
+								<h3>Educação para um</h3>
+								<h4>Mundo melhor</h4>
+								<p>Engajamento social e diálogo com a comunidade são princípios fundamentais para nós. Mais do que profissionais, formamos cidadãos.</p>
+								<div class="more-button">
+									<a href="#" data-toggle="modal" data-target="#modal_mundo_melhor">Saiba mais</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="banner-text">
+								<h3>O nosso revolucionário</h3>
+								<h4>Fazer educacional</h4>
+								<p>Nossos processos de ensino são pensados para que aluno construa a sua aprendizagem, como uma aprendizagem significativa e como um contributo para a formação do seu perfil profissional.</p>
+								<div class="more-button">
+									<a href="#" data-toggle="modal" data-target="#modal_fazer_educacional">Saiba mais</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>	
+			</div>	
+		</div>
+	</header>
+
+	<!-- Modal Mundo Melhor -->
+	<div class="modal fade" id="modal_educacao" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4>Excelência em educação</h4>
+					<iframe width="100%" height="315" src="https://www.youtube.com/embed/12z0Pit_y44" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+				</div>
+				<div class="modal-body">
+					<p>Revolucionamos a forma de ensinar, valoriando a reflexão, intuição, sensibilidade e habilidades sociais. Se cada pessoa é única, então devemos valorizar a nossa singularidade.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Modal Mundo Melhor -->
+	<div class="modal fade" id="modal_mundo_melhor" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4>Educação para um mundo melhor.</h4>
+					<img src="https://www.basf.com/images/br/Sustentabilidade/iStock_24523617_LARGE.jpg-renditions/cq5dam.web.16-9.12.jpg" alt="Engajamento social" class="img-rounded img-responsive">
+				</div>
+				<div class="modal-body">
+					<p>Engajamento social e diálogo com a comunidade são princípios fundamentais para nós. Mais do que profissionais, formamos cidadãos.Engajamento social e diálogo com a comunidade são princípios fundamentais para nós. Mais do que profissionais, formamos cidadãos.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal Fazer Educacional -->
+	<div class="modal fade" id="modal_fazer_educacional" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4>Fazer Educacional</h4>
+					<img src="https://res.cloudinary.com/emazecom/image/fetch/c_limit,a_ignore,w_520,h_320/http%3A%2F%2Fuserscontent2.emaze.com%2Fimages%2F07ba3c89-1dc2-4e8c-91d7-d72f35787228%2Fe03fb552-e816-43fb-8421-2d417ce78fd4.png" alt="Educação tecnológica" class="img-rounded img-responsive">
+				</div>
+				<div class="modal-body">
+					<p>O exercício da “profissão docência” pelo nosso coletivo de professores está centrado na compreenção da Pesquisa como princípio pedagógico, em face de entendermos que ela possibilita ao aluno desenvolver e aprimorar sua capacidade de reflexão, e uma compreensão interativa da tecnologia para além do seu uso, assim como vislumbrar possíveis repercussões na sociedade.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Sobre nós -->
+	<section class="about-agileits">
+		<div class="container">	
+			<h3 class="heading-agileinfo">Sobre Nós<span>Vivencie uma educação de excelência</span></h3>
+			<div class="agileits_banner_bottom">
+				<p>O Departamento Acadêmico de Eletrônica do Instituto Federal de Santa Catarina está a mais de 30 anos formando profissionais qualificados e cidadãos consciente, sempre procurado contribuir para o coletivo da Instituição propondo, interferindo e atuando nos momentos educativos, pedagógicos, administrativos, políticos e sociais.</p>
+			</div>
+			<div class="w3ls_banner_bottom_grids">
+				<ul class="cbp-ig-grid">
+					<a href="view/sobre_nos/tour_virtual.html">
+						<li>
+							<div class="w3_grid_effect">
+								<span class="cbp-ig-icon w3_users"></span>
+								<h4 class="cbp-ig-title">Tour Virtual</h4>
+								<span class="cbp-ig-category">Venha nos conhecer</span>
+							</div>
+						</li>
+					</a>
+					<a href="view/sobre_nos/tunel_do_tempo.html">
+						<li>
+							<div class="w3_grid_effect">
+								<span class="cbp-ig-icon w3_ticket"></span>
+								<h4 class="cbp-ig-title">Túnel do Tempo</h4>
+								<span class="cbp-ig-category">Tradição e Experiência</span>
+							</div>
+						</li>
+					</a>
+					<a href="view/sobre_nos/docentes_e_administrativo.html">
+						<li>
+							<div class="w3_grid_effect">
+								<span class="cbp-ig-icon w3_road"></span>
+								<h4 class="cbp-ig-title">Docentes</h4>
+								<span class="cbp-ig-category">Professores qualificados</span>
+							</div>
+						</li>
+					</a>
+					<a href="view/sobre_nos/grupos_de_pesquisa.html">
+						<li>
+							<div class="w3_grid_effect">
+								<span class="cbp-ig-icon w3_cube"></span>
+								<h4 class="cbp-ig-title">Grupos de Pesquisa</h4>
+								<span class="cbp-ig-category">Tecnologia de ponta</span>
+							</div>
+						</li>
+					</a>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<!-- Estatísticas -->
+	<section class="stats-agileits" id="stats">
+		<div class="container">
+			<h3 class="heading-agileinfo white-w3ls">Temos orgulho de possuir<span class="black-w3ls">Sed lectus tellus , feugiat porttitor nulla.</span></h3>
+		</div>
+		<div class="stats-info agileits w3layouts">
+			<div class="container">
+				<div class="col-md-3 agileits w3layouts col-sm-6 stats-grid stats-grid-1">
+					<div class="numscroller agileits-w3layouts" data-slno='1' data-min='0' data-max='35' data-delay='3' data-increment="1">35</div>
+					<div class="stat-info-w3ls">
+						<h4 class="agileits w3layouts">Professores</h4>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-3 agileits w3layouts stats-grid stats-grid-2">
+					<div class="numscroller agileits-w3layouts" data-slno='1' data-min='0' data-max='1000' data-delay='3' data-increment="1">1000</div>
+					<div class="stat-info-w3ls">
+						<h4 class="agileits w3layouts">Estudantes</h4>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-3 stats-grid agileits w3layouts stats-grid-3">
+					<div class="numscroller agileits-w3layouts" data-slno='1' data-min='0' data-max='5' data-delay='2' data-increment="1">5</div>
+					<div class="stat-info-w3ls">
+						<h4 class="agileits w3layouts">Cursos</h4>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-3 stats-grid stats-grid-4 agileits w3layouts">
+					<div class="numscroller agileits-w3layouts" data-slno='1' data-min='0' data-max='8000' data-delay='3' data-increment="15">8000</div>
+					<div class="stat-info-w3ls">
+						<h4 class="agileits w3layouts">profissionais formados</h4>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Testemunhais -->
+	<div id="testimonials" class="testimonials">
+		<div class="container">
+			<h3 class="heading-agileinfo">O que nossos egressos dizem<span>Mais do que profissionais, formamos cidadãos</span></h3>
+			<div class="flex-slider">
+				<ul id="flexiselDemo1">			
+					<li>
+						<div class="laptop">
+							<div class="col-md-8 team-right">
+								<p>Estudar no DAELN foi uma experiência incrível, é uma excelênte instituição.Estudar no DAELN foi uma experiência incrível, é uma excelênte instituição.</p>
+								<div class="name-w3ls">
+									<h5>Ana Paula</h5>
+									<span>Engenheira Eletrônica</span>
+								</div>
+							</div>
+							<div class="col-md-4 team-left">
+								<img class="img-responsive" src="model/test1.jpg" alt=" " />
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</li>
+					<li>
+						<div class="laptop">
+							<div class="col-md-8 team-right">
+								<p>Estudar no DAELN foi uma experiência incrível, é uma excelênte instituição.Estudar no DAELN foi uma experiência incrível, é uma excelênte instituição.</p>
+								<div class="name-w3ls">
+									<h5>Leonardo Benitez</h5>
+									<span>Engenheiro Eletrônico</span>
+								</div>
+							</div>
+							<div class="col-md-4 team-left">
+								<img class="img-responsive" src="model/test2.jpg" alt=" " />
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</li>
+				</ul>
+				
+			</div>
+
+		</div>
+	</div>
+	
+	<!-- Back to the top -->
+	<a href="#navbar" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+	<!-- Rodapé -->
+	<footer id="rodape"></footer>
+
+	<!-- Javascript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="recursos/js/SmoothScroll.min.js"></script>
+	<script src="recursos/js/move-top.js"></script>
+	<script src="recursos/js/easing.js"></script>
+	<script src="recursos/js/numscroller-1.0.js"></script>
+	<script src="recursos/js/jquery.flexisel.js"></script>
+	<script src="recursos/js/responsiveslides.min.js"></script>	
+	<script>
+		jQuery(document).ready(function($) {
+			$().UItoTop({});
+
+			$("#navbar").load("recursos/html/navbar.html #primeiro_nivel", function(){$("#pagina_inicial").addClass("active");});
+			$("#rodape").load("recursos/html/rodape.html #primeiro_nivel");	
+			
+			$("#slider3").responsiveSlides({});
+			$("#flexiselDemo1").flexisel({});
+		});
+	</script>
+</body>
+</html>

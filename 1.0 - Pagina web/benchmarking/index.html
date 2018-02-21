@@ -22,27 +22,7 @@
 	<body ng-controller="bench_controller" ng-init="proxima_pagina(0);">
 		<div class="geral">
 			<!-- Navbar -->
-			<nav class="navbar navbar-default">
-				<div class="container-fluid">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<a class="navbar-brand" href="">Benchmarking</a>
-					</div>
-
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						<ul class="nav navbar-nav">
-							<li><a data-toggle="modal" data-target="#about">Sobre o projeto</a></li>
-						</ul>
-					</div>
-				</div>
-			</nav>
+			<nav ng-include="'recursos/html/navbar.html'" class="navbar navbar-default"></nav>
 			
 			<div class="container-fluid wrap">
 				<!-- Título -->
@@ -89,9 +69,9 @@
 								<th>Pergunta</th>
 								<th>Resposta</th>
 							</tr>
-							<tr ng-repeat="hist in historico">
-								<td>{{hist.pergunta}}</td>
-								<td>{{hist.resposta}}</td>
+							<tr ng-repeat="(x, y) in historico">
+								<td>{{x}}</td>
+								<td>{{y}}</td>
 							</tr>
 						</table>						
 						
@@ -150,17 +130,7 @@
 				</section>
 			</div>
 				
-			<footer class="container-fluid rodape" >
-				<!-- Identificação do rodapé -->
-				<div class="row rodape"> 
-					<p>© 2017 Grupo de Pesquisa em Educação Tecnológica - DAELN</p></br>
-					<a class="fa fa-facebook-square"	target="_blanck" href="https://www.facebook.com/eletronica.ifsc"></a> 
-					<a class="fa fa-youtube-square"		target="_blanck" href="https://www.youtube.com/user/EletronicaIFSC"></a> 
-					<a class="fa fa-google-plus-square"	target="_blanck" href="https://plus.google.com/101294312921190812200"></a> 
-					<a class="fa fa-instagram"			target="_blanck" href="https://www.instagram.com/explore/locations/218004176/ifsc-campus-florianopolis/"></a> 
-					<a class="fa fa-twitter-square"		target="_blanck" href="https://twitter.com/ifscfloripa"></a> 
-				</div>
-			</footer>
+			<footer ng-include="'recursos/html/rodape.html'" class="container-fluid rodape"></footer>
 		</div>
 		
 		<!-- Java Script -->
@@ -169,8 +139,5 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>		
 		<script src="recursos/js/jquery-radar-plus.js"></script>		
  		<script src="recursos/js/angular_controller.js"></script>		
-		<script>
-
-		</script>
 	</body>
 </html>
