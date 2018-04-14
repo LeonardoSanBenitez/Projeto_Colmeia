@@ -1,0 +1,4 @@
+estavamos em período de transição
+os arquvios estão uma mistura da zueira antiga com uma com o template novo 
+Os arquivos do novo layout estão na pasta novo_template (seguindo uma tentativa de padrão MVC), porém ele ainda puxa muitas páginas do layout antigo
+Se tiveres alguma dúvida podes entrar em contato comigo: LsBenitezPereira@gmail.com
